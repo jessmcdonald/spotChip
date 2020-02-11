@@ -1,6 +1,7 @@
 node_modules
 njtest
 
+.node_modules
 
 .DS_Store
 .env
