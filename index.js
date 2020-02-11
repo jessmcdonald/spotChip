@@ -36,12 +36,12 @@ const stateKey = 'spotify_auth_state';
 // serve static files
 const app = express();
 
-app.use(express.static(path.resolve(__dirname, '/client/build')))
+app.use(express.static(path.resolve(__dirname, 'client', 'build')))
    .use(cors())
    .use(cookieParser());
 
 app.get('/', function(req, res) {
-  res.render(path.resolve(__dirname, '/client/build/index.html'));
+  res.render(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 app.get('/login', function(req, res) {
@@ -149,7 +149,7 @@ app.get('/refresh_token', function(req, res) {
 
 // all other requests return React app
 app.get('*', function(request, response) {
-  response.sendFile(path.resolve(__dirname, '/client/pubic', 'index.html'));
+  response.sendFile(path.join(__dirname, 'client', 'pubic', 'index.html'));
 });
 
 app.listen(PORT, function() {
