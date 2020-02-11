@@ -3,7 +3,7 @@
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
 
-require('dotenv').config()
+require('dotenv').config();
 
 const express = require('express');
 const path = require('path');
@@ -151,7 +151,7 @@ app.get('/refresh_token', function(req, res) {
 
 // all other requests return React app
 app.get('*', function(request, response) {
-  response.sendFile(path.join(__dirname, 'client', 'pubic', 'index.html'));
+  response.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
 });
 
 app.listen(PORT, function() {
