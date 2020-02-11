@@ -36,7 +36,7 @@ const stateKey = 'spotify_auth_state';
 // serve static files
 const app = express();
 
-app.use(express.static(path.resolve(__dirname, 'client', 'build')))
+app.use(express.static(path.join(__dirname, 'client', 'build')))
    .use(cors())
    .use(cookieParser());
 
