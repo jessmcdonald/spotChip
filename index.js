@@ -14,7 +14,9 @@ const cookieParser = require('cookie-parser');
 
 const client_id = process.env.CLIENT_ID;
 const client_secret = process.env.CLIENT_SECRET;
-let redirect_uri = 'http://localhost:8888/callback'; // Your redirect uri
+let redirect_uri = process.env.REDIRECT_URI;
+let frontend_uri = process.env.FRONTEND_URI;
+const PORT = process.env.PORT || 8888;
 
 /**
  * Generates a random string containing numbers and letters
