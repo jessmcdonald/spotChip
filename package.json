@@ -4,7 +4,11 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts" : {
-    "start": "node index.js",
+    "server": "node server",
+    "client": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "start": "node server",
     "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
   },
   "engines": {
