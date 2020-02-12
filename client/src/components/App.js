@@ -52,7 +52,8 @@ render() {
         <h1>This is an example of the Authorization Code flow</h1>
         <a href="/login" class="btn btn-primary" onClick={() => this.getUserInfo()}>Log in with Spotify</a>
       </div>
-      <div id="loggedin">
+      {display_name ? (
+        <div id="loggedin">
         <div id="user-profile">
           Logged in as ${display_name}
         </div>
@@ -60,6 +61,9 @@ render() {
         </div>
         <button class="btn btn-default" id="obtain-new-token" >Obtain new token using the refresh token</button>
       </div>
+
+      )}
+      
     </div>
   </body>
     </div>
