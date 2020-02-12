@@ -37,7 +37,6 @@ getUserInfo = () => {
 };
 
 render() {
-  const display_name = this.state.user.display_name;
 
   return (
   
@@ -52,10 +51,10 @@ render() {
         <h1>This is an example of the Authorization Code flow</h1>
         <a href="/login" class="btn btn-primary" onClick={() => this.getUserInfo()}>Log in with Spotify</a>
       </div>
-      {display_name ? (
+      {this.state.user ? (
         <div id="loggedin">
         <div id="user-profile">
-          Logged in as ${display_name}
+          Logged in as ${this.state.user.display_name}
         </div>
         <div id="oauth">
         </div>
