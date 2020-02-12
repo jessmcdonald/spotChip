@@ -21,6 +21,10 @@ class App extends React.Component {
     };
 }
 
+componentDidMount(){
+  this.getUserInfo()
+}
+
 //get user
 getUserInfo = () => {
     axios.get("https://api.spotify.com/v1/me",
@@ -62,7 +66,7 @@ render() {
       </div>
 
       ) : (
-        <a href="/login" class="btn btn-primary" onClick={() => this.getUserInfo()}>Log in with Spotify</a>
+        <a href="/login" class="btn btn-primary" >Log in with Spotify</a>
       )
       }
       
