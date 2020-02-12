@@ -161,6 +161,6 @@ app.get('*', function(request, response) {
 });
 
 app.listen(PORT, function() {
-  console.warm(`Node cluster worked ${process.pid}: listening on port ${PORT}`);
+  console.warn(`Node cluster worked ${process.pid}: listening on port ${PORT}`);
 });
 
