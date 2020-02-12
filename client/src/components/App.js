@@ -62,7 +62,10 @@ render() {
         <button class="btn btn-default" id="obtain-new-token" >Obtain new token using the refresh token</button>
       </div>
 
-      )}
+      ) : (
+        <a href="/login" class="btn btn-primary" onClick={() => this.getUserInfo()}>Log in with Spotify</a>
+      )
+      }
       
     </div>
   </body>
