@@ -3,7 +3,7 @@
   "description": "Spotify Profile & Show Finder",
   "version": "0.1.0",
   "main": "index.js",
-  "scripts" : {
+  "scripts": {
     "server": "node server",
     "client": "npm start --prefix client",
     "client-install": "npm install --prefix client",
@@ -23,6 +23,7 @@
   "license": "ISC",
   "homepage": "https://github.com/jessmcdonald/showspotter#README",
   "dependencies": {
+    "axios": "^0.19.2",
     "cookie-parser": "^1.4.4",
     "cors": "^2.8.4",
     "dotenv": "^8.2.0",
