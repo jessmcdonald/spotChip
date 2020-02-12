@@ -34,10 +34,9 @@ getUserInfo = () => {
       });
 };
 
-
-
 render() {
   return (
+
     <div className="App">
       <header className="App-header">
       </header>
@@ -51,7 +50,7 @@ render() {
       </div>
       <div id="loggedin">
         <div id="user-profile">
-          Logged in as displayname
+          Logged in as ${this.state.user.display_name}
         </div>
         <div id="oauth">
         </div>
