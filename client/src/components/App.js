@@ -16,7 +16,9 @@ class App extends React.Component {
     const params = getHashParams();
     const access_token = params.access_token;
     const refresh_token = params.access_token;
-
+    this.state = {
+      user = null
+    };
 }
 
 //get user
