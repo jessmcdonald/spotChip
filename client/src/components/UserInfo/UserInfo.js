@@ -37,11 +37,15 @@ class UserInfo extends React.Component {
   getFollowingArtists = () => {
     let access_token = this.props.access_token;
     axios
-      .get("https://api.spotify.com/v1/me/following?type=artist", {
-        headers: { Authorization: `Bearer ${access_token}` }
+      .get("https://api.spotify.com/v1/me/following", {
+        headers: { Authorization: `Bearer ${access_token}` },
+        params: {
+          type: "artist"
+        }
       })
       .then(response => {
         this.setState({ following: response.data });
+        console.log;
       })
       .catch(function(error) {
         console.log(error);
