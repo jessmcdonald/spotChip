@@ -58,7 +58,7 @@
   -webkit-animation: blink normal 2s infinite ease-in-out;
   -ms-animation: blink normal 2s infinite ease-in-out;
   animation: blink normal 2s infinite ease-in-out;
-  height: 2vh;
+  height: 1.8vh;
   padding-right: 10px;
 }
 
