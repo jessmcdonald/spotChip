@@ -51,10 +51,7 @@ render() {
 
   <body>
     <div class="container">
-      <div id="login">
-        <h1>This is an example of the Authorization Code flow</h1>
-        <a href="/login" class="btn btn-primary" onClick={() => this.getUserInfo()}>Log in with Spotify</a>
-      </div>
+      
       {this.state.user ? (
         <div id="loggedin">
         <div id="user-profile">
@@ -66,7 +63,10 @@ render() {
       </div>
 
       ) : (
-        <a href="/login" class="btn btn-primary" >Log in with Spotify</a>
+        <div id="login" className="App-login">
+        <h1>Spotify Spot</h1>
+        <a href="/login" class="btn btn-primary" onClick={() => this.getUserInfo()}>Log in with Spotify</a>
+      </div>
       )
       }
       
