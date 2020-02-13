@@ -3116,3 +3116,5 @@ export const following = {
     href: "https://api.spotify.com/v1/me/following?type=artist&limit=20"
   }
 };
+
+//{this.state.following.artists.items.length}

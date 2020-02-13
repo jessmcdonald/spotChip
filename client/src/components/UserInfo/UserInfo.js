@@ -68,9 +68,7 @@ class UserInfo extends React.Component {
           </div>
           <div className="following">
             <p className="followersTitle">Following</p>
-            <p className="followerCount">
-              {this.state.following.artists.items.length}
-            </p>
+            <p className="followerCount"></p>
           </div>
         </div>
 
