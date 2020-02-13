@@ -35,7 +35,14 @@ class UserInfo extends React.Component {
       <div className="UserProfile">
         <img className="ProfileImg" src={this.props.user.images[0].url} />
         {this.props.user.display_name}
-        Currently Playing: {this.state.currentlyPlaying.item.name}
+
+        {this.state.currentlyPlaying ? (
+          <div className="crrentlyPlaying">
+            Currently Playing: {this.state.currentlyPlaying.item.name}
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
     );
   }
