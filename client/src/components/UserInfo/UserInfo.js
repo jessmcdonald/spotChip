@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./UserInfo.css";
+import nowPlayingIcon from "../../img/Spotify_Icon_RGB_White.png";
 
 class UserInfo extends React.Component {
   constructor(props) {
@@ -37,7 +38,8 @@ class UserInfo extends React.Component {
         {this.props.user.display_name}
 
         {this.state.currentlyPlaying ? (
-          <div className="crrentlyPlaying">
+          <div className="currentlyPlaying">
+            <img src={currentlyPlayingImg} />
             Currently Playing: {this.state.currentlyPlaying.item.name}
           </div>
         ) : (

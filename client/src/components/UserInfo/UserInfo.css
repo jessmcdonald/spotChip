@@ -5,3 +5,59 @@
 .ProfileImg {
   border-radius: 50%;
 }
+
+.currentlyPlayingImg {
+  -moz-animation: blink normal 2s infinite ease-in-out;
+  -webkit-animation: blink normal 2s infinite ease-in-out;
+  -ms-animation: blink normal 2s infinite ease-in-out;
+  animation: blink normal 2s infinite ease-in-out;
+  height: 20px;
+}
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* IE */
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

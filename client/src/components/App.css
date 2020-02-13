@@ -13,10 +13,12 @@
   color: #fff;
 }
 
-.btn-primary {
+.login-btn {
   background-color: #1db954;
   color: #fff;
   font-family: "CircularProBold";
-  font-size: 5vh;
-  padding: 10px;
+  font-size: 3vh;
+  padding: 10px 50px 12px 50px;
+  border-radius: 40px;
+  text-decoration: none;
 }

@@ -66,9 +66,10 @@ class App extends React.Component {
             ) : (
               <div id="login" className="App-login">
                 <h1>Spotify Spot</h1>
+
                 <a
                   href="/login"
-                  class="btn btn-primary"
+                  class="login-btn"
                   onClick={() => this.getUserInfo()}
                 >
                   Log in with Spotify
