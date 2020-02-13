@@ -7,7 +7,7 @@ class UserInfo extends React.Component {
     super(props);
 
     this.state = {
-      user: null
+      currentlyPlaying: null
     };
   }
 
@@ -35,6 +35,7 @@ class UserInfo extends React.Component {
       <div className="UserProfile">
         <img className="ProfileImg" src={this.props.user.images[0].url} />
         {this.props.user.display_name}
+        Currently Playing: {this.state.currentlyPlaying.item.name}
       </div>
     );
   }
