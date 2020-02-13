@@ -37,11 +37,14 @@ class RecentlyPlayed extends React.Component {
     return (
       <div className="RecentlyPlayed">
         {this.state.recentlyPlayed ? (
-          <ul>
+          <ol>
             {this.state.recentlyPlayed.map(item => (
-              <li>{item.track.name}</li>
+              <li>
+                {item.track.name} - {item.track.artists[0].name} -{" "}
+                {item.track.album.name}
+              </li>
             ))}
-          </ul>
+          </ol>
         ) : (
           <div></div>
         )}
