@@ -45,7 +45,7 @@ class UserInfo extends React.Component {
       })
       .then(response => {
         this.setState({ following: response.data });
-        console.log(reponse.data);
+        console.log(response.data);
         console.log(this.state.following);
       })
       .catch(function(error) {
