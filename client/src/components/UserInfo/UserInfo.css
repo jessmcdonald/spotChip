@@ -6,11 +6,51 @@
 
 .ProfileImg {
   border-radius: 50%;
-  height: 30vh;
+  height: 20vh;
 }
 
 .currentlyPlaying {
   font-family: "CircularProMedium";
+  color: #e5e5e5;
+  font-size: 1.5vh;
+  display: flex;
+}
+
+.displayName {
+  font-size: 3vh;
+}
+
+.displayId {
+  color: #1db954;
+  margin-top: -2vh;
+  padding-bottom: 2vh;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 1.3vh;
+}
+
+.followering {
+  display: flex;
+  margin-bottom: 2vh;
+}
+
+.followers {
+  width: 50%;
+}
+
+.following {
+  width: 50%;
+}
+
+.followersTitle {
+  text-transform: uppercase;
+  color: #b2b2b2;
+  letter-spacing: 0.3em;
+  font-size: 1.2vh;
+}
+
+.followerCount {
+  color: #1db954;
 }
 
 .nowPlayingIcon {
@@ -18,7 +58,7 @@
   -webkit-animation: blink normal 2s infinite ease-in-out;
   -ms-animation: blink normal 2s infinite ease-in-out;
   animation: blink normal 2s infinite ease-in-out;
-  height: 20px;
+  height: 2vh;
   padding-right: 10px;
 }
 

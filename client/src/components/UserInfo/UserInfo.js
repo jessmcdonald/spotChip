@@ -3,15 +3,21 @@ import axios from "axios";
 import "./UserInfo.css";
 import nowPlayingIcon from "../../img/playing.png";
 
+import { currentlyPlaying, following } from "../mockData";
+
 class UserInfo extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { currentlyPlaying: null };
+    this.state = {
+      currentlyPlaying: currentlyPlaying,
+      following: following
+    };
   }
 
   componentDidMount() {
     this.getCurrentlyPlaying();
+    this.getFollowingArtists();
   }
 
   getCurrentlyPlaying = () => {
@@ -28,13 +34,41 @@ class UserInfo extends React.Component {
       });
   };
 
+  getFollowingArtists = () => {
+    let access_token = this.props.access_token;
+    axios
+      .get("https://api.spotify.com/v1/me/following?type=artist", {
+        headers: { Authorization: `Bearer ${access_token}` }
+      })
+      .then(response => {
+        this.setState({ following: response.data });
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <div className="UserProfile">
         <img className="ProfileImg" src={this.props.user.images[0].url} />
-        <p>{this.props.user.display_name}</p>
-        <p>Followers</p>
-        {this.props.user.followers.total}
+        <div className="displayInfo">
+          <p className="displayName">{this.props.user.display_name}</p>
+          <p className="displayId">id: {this.props.user.id}</p>
+        </div>
+        <div className="followering">
+          <div className="followers">
+            <p className="followersTitle">Followers</p>
+            <p className="followerCount">{this.props.user.followers.total}</p>
+          </div>
+          <div className="following">
+            <p className="followersTitle">Following</p>
+            <p className="followerCount">
+              {this.state.following.artists.items.length}
+            </p>
+          </div>
+        </div>
+
         {this.state.currentlyPlaying ? (
           <div className="currentlyPlaying">
             <img src={nowPlayingIcon} className="nowPlayingIcon" />

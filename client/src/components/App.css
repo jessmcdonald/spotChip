@@ -9,7 +9,7 @@
   height: 100vh;
   width: 100vw;
   display: grid;
-  grid-template-columns: [first col1-start] 32% [col1-end col2-start] 32% [col2-end col3-start] 32% [col3-end end];
+  grid-template-columns: [first col1-start] 20% [col1-end col2-start] 38% [col2-end col3-start] 38% [col3-end end];
   grid-template-rows: [first row1-start] 49% [row1-end row2-start] 49% [row2-end end];
   grid-column-gap: 1.5%;
   grid-row-gap: 2%;

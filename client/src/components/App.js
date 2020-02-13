@@ -6,6 +6,8 @@ import { getHashParams } from "../spotify";
 import UserInfo from "./UserInfo/UserInfo";
 import RecentlyPlayed from "./RecentlyPlayed/RecentlyPlayed";
 
+import { user } from "./mockData";
+
 const params = getHashParams();
 const access_token = params.access_token;
 const refresh_token = params.access_token;
@@ -23,7 +25,7 @@ class App extends React.Component {
     const access_token = params.access_token;
     const refresh_token = params.access_token;
     this.state = {
-      user: null
+      user: user
     };
   }
 
