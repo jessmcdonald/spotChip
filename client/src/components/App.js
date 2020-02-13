@@ -3,6 +3,8 @@ import "./App.css";
 import axios from "axios";
 import { getHashParams } from "../spotify";
 
+import UserInfo from "./UserInfo/UserInfo";
+
 const params = getHashParams();
 const access_token = params.access_token;
 const refresh_token = params.access_token;
@@ -50,14 +52,16 @@ class App extends React.Component {
         <body>
           <div class="container">
             {this.state.user ? (
-              <div id="loggedin">
+              <div id="homedash">
                 <div id="user-profile">
                   Logged in as {this.state.user.display_name}
+                  <UserInfo
+                    key={this.state.user.display_name}
+                    id={this.state.user.display_name}
+                    user={this.state.user}
+                    access_token={access_token}
+                  />
                 </div>
-                <div id="oauth"></div>
-                <button class="btn btn-default" id="obtain-new-token">
-                  Obtain new token using the refresh token
-                </button>
               </div>
             ) : (
               <div id="login" className="App-login">
