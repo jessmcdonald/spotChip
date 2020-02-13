@@ -34,7 +34,19 @@ class RecentlyPlayed extends React.Component {
   };
 
   render() {
-    return <div className="RecentlyPlayed"></div>;
+    return (
+      <div className="RecentlyPlayed">
+        {this.state.recentlyPlayed ? (
+          <ul>
+            {this.state.recentlyPlayed.map(item => (
+              <li>{item.track.name}</li>
+            ))}
+          </ul>
+        ) : (
+          <div></div>
+        )}
+      </div>
+    );
   }
 }
 
