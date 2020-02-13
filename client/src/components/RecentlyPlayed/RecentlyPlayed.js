@@ -25,7 +25,7 @@ class RecentlyPlayed extends React.Component {
         }
       })
       .then(response => {
-        this.setState({ recentlyPlayed: response.data });
+        this.setState({ recentlyPlayed: response.data.items });
         console.log(this.state.recentlyPlayed);
       })
       .catch(function(error) {
@@ -34,7 +34,7 @@ class RecentlyPlayed extends React.Component {
   };
 
   render() {
-    return <div className="RecentlyPlayed">List</div>;
+    return <div className="RecentlyPlayed"></div>;
   }
 }
 
