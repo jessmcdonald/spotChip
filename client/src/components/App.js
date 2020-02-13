@@ -54,7 +54,6 @@ class App extends React.Component {
             {this.state.user ? (
               <div id="homedash">
                 <div id="user-profile">
-                  Logged in as {this.state.user.display_name}
                   <UserInfo
                     key={this.state.user.display_name}
                     id={this.state.user.display_name}

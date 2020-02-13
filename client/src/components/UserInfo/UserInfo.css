@@ -1,9 +1,12 @@
 .UserProfile {
   background-color: #191414;
+  color: #fff;
+  height: 50vh;
 }
 
 .ProfileImg {
   border-radius: 50%;
+  height: 30vh;
 }
 
 .nowPlayingIcon {

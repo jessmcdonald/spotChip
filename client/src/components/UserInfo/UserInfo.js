@@ -35,12 +35,14 @@ class UserInfo extends React.Component {
     return (
       <div className="UserProfile">
         <img className="ProfileImg" src={this.props.user.images[0].url} />
-        {this.props.user.display_name}
-
+        <p>{this.props.user.display_name}</p>
+        <p>Followers</p>
+        {this.props.user.followers.total}
         {this.state.currentlyPlaying ? (
           <div className="currentlyPlaying">
             <img src={nowPlayingIcon} className="nowPlayingIcon" />
-            Currently Playing: {this.state.currentlyPlaying.item.name}
+            Currently Playing: {this.state.currentlyPlaying.item.name} -
+            {this.state.currentlyPlaying.item.album.artists[0].name}
           </div>
         ) : (
           <div></div>
