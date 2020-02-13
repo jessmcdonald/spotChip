@@ -10,7 +10,25 @@ body {
 @font-face {
   font-family: "CircularBlack";
   src: local("CircularBlack"),
-    url(/fonts/lineto-circular-black.ttf) format("truetype");
+    url(./fonts/lineto-circular-black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CircularProBold";
+  src: local("CircularProBold"),
+    url(./fonts/lineto-circular-pro-bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CircularProBook";
+  src: local("CircularProBook"),
+    url(./fonts/lineto-circular-pro-book.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "CircularProMedium";
+  src: local("CircularProMedium"),
+    url(./fonts/lineto-circular-pro-medium.ttf) format("truetype");
 }
 
 code {
