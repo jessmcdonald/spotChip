@@ -24,7 +24,6 @@ class UserInfo extends React.Component {
       })
       .then(response => {
         this.setState({ currentlyPlaying: response.data });
-        console.log(this.state.currentlyPlaying);
       })
       .catch(function(error) {
         console.log(error);
@@ -41,7 +40,7 @@ class UserInfo extends React.Component {
         {this.state.currentlyPlaying ? (
           <div className="currentlyPlaying">
             <img src={nowPlayingIcon} className="nowPlayingIcon" />
-            Currently Playing: {this.state.currentlyPlaying.item.name} -
+            Currently Playing: {this.state.currentlyPlaying.item.name} -{" "}
             {this.state.currentlyPlaying.item.album.artists[0].name}
           </div>
         ) : (

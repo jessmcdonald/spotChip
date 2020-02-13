@@ -4,6 +4,7 @@ import axios from "axios";
 import { getHashParams } from "../spotify";
 
 import UserInfo from "./UserInfo/UserInfo";
+import RecentlyPlayed from "./RecentlyPlayed/RecentlyPlayed";
 
 const params = getHashParams();
 const access_token = params.access_token;
@@ -54,6 +55,11 @@ class App extends React.Component {
             {this.state.user ? (
               <div id="homedash">
                 <div id="user-profile">
+                  <RecentlyPlayed
+                    key="recentlyplayed"
+                    id="recentlyplayed"
+                    access_token={access_token}
+                  />
                   <UserInfo
                     key={this.state.user.display_name}
                     id={this.state.user.display_name}
