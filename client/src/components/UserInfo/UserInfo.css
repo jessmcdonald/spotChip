@@ -9,12 +9,17 @@
   height: 30vh;
 }
 
+.currentlyPlaying {
+  font-family: "CircularProMedium";
+}
+
 .nowPlayingIcon {
   -moz-animation: blink normal 2s infinite ease-in-out;
   -webkit-animation: blink normal 2s infinite ease-in-out;
   -ms-animation: blink normal 2s infinite ease-in-out;
   animation: blink normal 2s infinite ease-in-out;
   height: 20px;
+  padding-right: 10px;
 }
 
 @-moz-keyframes blink {
