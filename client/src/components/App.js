@@ -23,7 +23,35 @@ class App extends React.Component {
     const access_token = params.access_token;
     const refresh_token = params.access_token;
     this.state = {
-      user: null
+      user: {
+        country: "DE",
+        display_name: "Jessie Jane Mcdonald",
+        email: "jessicajanemcdonald@gmail.com",
+        explicit_content: {
+          filter_enabled: false,
+          filter_locked: false
+        },
+        external_urls: {
+          spotify: "https://open.spotify.com/user/stanleymeowskers"
+        },
+        followers: {
+          href: null,
+          total: 10
+        },
+        href: "https://api.spotify.com/v1/users/stanleymeowskers",
+        id: "stanleymeowskers",
+        images: [
+          {
+            height: null,
+            url:
+              "https://scontent.xx.fbcdn.net/v/t1.0-1/p320x320/15085688_10155160021221490_1969440978709319667_n.jpg?_nc_cat=108&_nc_ohc=FSm-Bdcm1_4AX_at_et&_nc_ht=scontent.xx&_nc_tp=6&oh=a679edb586c6a54e2409e4cd6c7fe5f2&oe=5EC933A5",
+            width: null
+          }
+        ],
+        product: "premium",
+        type: "user",
+        uri: "spotify:user:stanleymeowskers"
+      }
     };
   }
 
@@ -53,13 +81,15 @@ class App extends React.Component {
         <body>
           <div class="container">
             {this.state.user ? (
-              <div id="homedash">
-                <div id="user-profile">
+              <div id="homedash" className="homedash">
+                <div className="item-b">
                   <RecentlyPlayed
                     key="recentlyplayed"
                     id="recentlyplayed"
                     access_token={access_token}
                   />
+                </div>
+                <div className="item-a">
                   <UserInfo
                     key={this.state.user.display_name}
                     id={this.state.user.display_name}
