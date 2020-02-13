@@ -25,7 +25,7 @@ class App extends React.Component {
     const access_token = params.access_token;
     const refresh_token = params.access_token;
     this.state = {
-      user: user
+      user: null
     };
   }
 
