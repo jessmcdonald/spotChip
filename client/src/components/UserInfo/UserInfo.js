@@ -39,7 +39,7 @@ class UserInfo extends React.Component {
 
         {this.state.currentlyPlaying ? (
           <div className="currentlyPlaying">
-            <img src={currentlyPlayingImg} />
+            <img src={nowPlayingIcon} className="nowPlayingIcon" />
             Currently Playing: {this.state.currentlyPlaying.item.name}
           </div>
         ) : (

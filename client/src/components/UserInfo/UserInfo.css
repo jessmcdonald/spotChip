@@ -6,7 +6,7 @@
   border-radius: 50%;
 }
 
-.currentlyPlayingImg {
+.nowPlayingIcon {
   -moz-animation: blink normal 2s infinite ease-in-out;
   -webkit-animation: blink normal 2s infinite ease-in-out;
   -ms-animation: blink normal 2s infinite ease-in-out;
