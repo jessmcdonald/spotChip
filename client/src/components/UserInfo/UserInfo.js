@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./UserInfo.css";
-import nowPlayingIcon from "../../img/Spotify_Icon_RGB_White.png";
+import nowPlayingIcon from "../../img/playing.png";
 
 class UserInfo extends React.Component {
   constructor(props) {
