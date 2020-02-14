@@ -5,6 +5,7 @@ import { getHashParams } from "../spotify";
 
 import UserInfo from "./UserInfo/UserInfo";
 import RecentlyPlayed from "./RecentlyPlayed/RecentlyPlayed";
+import Playlists from "./Playlists/Playlists";
 
 import { user } from "./mockData";
 
@@ -25,6 +26,7 @@ class App extends React.Component {
     const access_token = params.access_token;
     const refresh_token = params.access_token;
     this.state = {
+      //user: user
       user: null
     };
   }
@@ -52,41 +54,47 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header"></header>
-        <body>
-          <div class="container">
-            {this.state.user ? (
-              <div id="homedash" className="homedash">
-                <div className="item-b">
-                  <RecentlyPlayed
-                    key="recentlyplayed"
-                    id="recentlyplayed"
-                    access_token={access_token}
-                  />
-                </div>
-                <div className="item-a">
-                  <UserInfo
-                    key={this.state.user.display_name}
-                    id={this.state.user.display_name}
-                    user={this.state.user}
-                    access_token={access_token}
-                  />
-                </div>
+        <div className="App-Container">
+          {this.state.user ? (
+            <div id="homedash" className="homedash">
+              <div className="item-a">
+                <UserInfo
+                  key={this.state.user.display_name}
+                  id={this.state.user.display_name}
+                  user={this.state.user}
+                  access_token={access_token}
+                />
               </div>
-            ) : (
-              <div id="login" className="App-login">
-                <h1>Spotify Spot</h1>
+              <div className="item-b">
+                <RecentlyPlayed
+                  key="recentlyplayed"
+                  id="recentlyplayed"
+                  access_token={access_token}
+                />
+              </div>
+              <div className="item-c">
+                <Playlists
+                  key={this.state.user.display_name}
+                  id={this.state.user.display_name}
+                  user={this.state.user}
+                  access_token={access_token}
+                />
+              </div>
+            </div>
+          ) : (
+            <div id="login" className="App-login">
+              <h1>Spotify Spot</h1>
 
-                <a
-                  href="/login"
-                  class="login-btn"
-                  onClick={() => this.getUserInfo()}
-                >
-                  Log in with Spotify
-                </a>
-              </div>
-            )}
-          </div>
-        </body>
+              <a
+                href="/login"
+                class="login-btn"
+                onClick={() => this.getUserInfo()}
+              >
+                Log in with Spotify
+              </a>
+            </div>
+          )}
+        </div>
       </div>
     );
   }

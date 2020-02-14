@@ -3117,4 +3117,916 @@ export const following = {
   }
 };
 
-//{this.state.following.artists.items.length}
+export const playlists = {
+  href:
+    "https://api.spotify.com/v1/users/stanleymeowskers/playlists?offset=0&limit=20",
+  items: [
+    {
+      collaborative: false,
+      description: "bus rides? sad trap way",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/0NoixHdHS9lz6OzSkMOWhF"
+      },
+      href: "https://api.spotify.com/v1/playlists/0NoixHdHS9lz6OzSkMOWhF",
+      id: "0NoixHdHS9lz6OzSkMOWhF",
+      images: [
+        {
+          height: null,
+          url:
+            "https://pl.scdn.co/images/pl/default/4837c6e588f18fc2118f48a0cb04c33fdcda6942",
+          width: null
+        }
+      ],
+      name: "lo-fi hiphop 🚿",
+      owner: {
+        display_name: "Dave Capudoy",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/12169166280"
+        },
+        href: "https://api.spotify.com/v1/users/12169166280",
+        id: "12169166280",
+        type: "user",
+        uri: "spotify:user:12169166280"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "NzgsMjFhZTg2YWMwZDkyMDY4YmRmNTU4YWQzMWI5MmZkNWI5MGMwYWVlMw==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/0NoixHdHS9lz6OzSkMOWhF/tracks",
+        total: 39
+      },
+      type: "playlist",
+      uri: "spotify:playlist:0NoixHdHS9lz6OzSkMOWhF"
+    },
+    {
+      collaborative: false,
+      description:
+        "LoFi music to study&#x2F;relax to. LowFi, Hip-Hop, Low-Fi, Jazzhop, Chill-Hop and Chillout beats. Perfect background beats to sleep, chil, focus, doing homework, concentrate and meditate. lo-fi hip hop radio - beats to relax&#x2F;study to - Picture © free.",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/5RtIoZHMy9nfJ8mCNGceFy"
+      },
+      href: "https://api.spotify.com/v1/playlists/5RtIoZHMy9nfJ8mCNGceFy",
+      id: "5RtIoZHMy9nfJ8mCNGceFy",
+      images: [
+        {
+          height: null,
+          url:
+            "https://i.scdn.co/image/ab67706c0000da84beb98fc4f14d20ec67e27314",
+          width: null
+        }
+      ],
+      name:
+        "Lo Fi | Hip Hop / Chillhop (Relaxing & Chill Vibes) / Low-Fi Music, LowFi Jazzhop & Chilled Beats",
+      owner: {
+        display_name: "fmjsp91",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/q6fk7hem2vdve6u4gvsoo83xk"
+        },
+        href: "https://api.spotify.com/v1/users/q6fk7hem2vdve6u4gvsoo83xk",
+        id: "q6fk7hem2vdve6u4gvsoo83xk",
+        type: "user",
+        uri: "spotify:user:q6fk7hem2vdve6u4gvsoo83xk"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MjI5OSw0NWUwZWNlNjgyMzkwY2NjZWMzMTE0NGM0MGVlNWI5M2U5ZjY0NDIx",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/5RtIoZHMy9nfJ8mCNGceFy/tracks",
+        total: 669
+      },
+      type: "playlist",
+      uri: "spotify:playlist:5RtIoZHMy9nfJ8mCNGceFy"
+    },
+    {
+      collaborative: false,
+      description:
+        "A daily selection of 200 chill beats perfect to help you relax &amp; study ",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/0vvXsWCC9xrXsKd4FyS8kM"
+      },
+      href: "https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM",
+      id: "0vvXsWCC9xrXsKd4FyS8kM",
+      images: [
+        {
+          height: null,
+          url:
+            "https://pl.scdn.co/images/pl/default/902e1adb4722c5089c446bddb4a318e0784da964",
+          width: null
+        }
+      ],
+      name: "lofi hip hop music - beats to relax/study to",
+      owner: {
+        display_name: "chilledcow",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/chilledcow"
+        },
+        href: "https://api.spotify.com/v1/users/chilledcow",
+        id: "chilledcow",
+        type: "user",
+        uri: "spotify:user:chilledcow"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "NjIxLGIyZjc0NDQ2NGUzMDg0MjliOWUwMWQ5NTYzNWE2MTM2ODJhYTdlOWY=",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/0vvXsWCC9xrXsKd4FyS8kM/tracks",
+        total: 208
+      },
+      type: "playlist",
+      uri: "spotify:playlist:0vvXsWCC9xrXsKd4FyS8kM"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/4ZKJAISPXZiGEPMDuYVW4b"
+      },
+      href: "https://api.spotify.com/v1/playlists/4ZKJAISPXZiGEPMDuYVW4b",
+      id: "4ZKJAISPXZiGEPMDuYVW4b",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b2738c60a40f0a37e195b5420299ab67616d0000b2738d74ef25f913c10a2fd48020ab67616d0000b27395ad760470e3b44518d5a763ab67616d0000b273f0f854104206cee0b9e24d08",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b2738c60a40f0a37e195b5420299ab67616d0000b2738d74ef25f913c10a2fd48020ab67616d0000b27395ad760470e3b44518d5a763ab67616d0000b273f0f854104206cee0b9e24d08",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b2738c60a40f0a37e195b5420299ab67616d0000b2738d74ef25f913c10a2fd48020ab67616d0000b27395ad760470e3b44518d5a763ab67616d0000b273f0f854104206cee0b9e24d08",
+          width: 60
+        }
+      ],
+      name: "Back In '84 – Ceremony",
+      owner: {
+        display_name: "Jessie Jane Mcdonald",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/stanleymeowskers"
+        },
+        href: "https://api.spotify.com/v1/users/stanleymeowskers",
+        id: "stanleymeowskers",
+        type: "user",
+        uri: "spotify:user:stanleymeowskers"
+      },
+      primary_color: null,
+      public: true,
+      snapshot_id:
+        "NTEsZmY0N2VlN2NjM2Q1Njc0ZWU0MzBlOWE3ZGRiMDc0MWQyN2VlMWY2Yg==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/4ZKJAISPXZiGEPMDuYVW4b/tracks",
+        total: 50
+      },
+      type: "playlist",
+      uri: "spotify:playlist:4ZKJAISPXZiGEPMDuYVW4b"
+    },
+    {
+      collaborative: false,
+      description: "Philanthrope, Brenky, Bassti and more",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/37i9dQZF1E35XDiiTuHpWp"
+      },
+      href: "https://api.spotify.com/v1/playlists/37i9dQZF1E35XDiiTuHpWp",
+      id: "37i9dQZF1E35XDiiTuHpWp",
+      images: [
+        {
+          height: null,
+          url:
+            "https://dailymix-images.scdn.co/v1/img/4c6994e720537e9ad34f263eca49269f488b612a/3/en/default",
+          width: null
+        }
+      ],
+      name: "Daily Mix 3",
+      owner: {
+        display_name: "Spotify",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/spotify"
+        },
+        href: "https://api.spotify.com/v1/users/spotify",
+        id: "spotify",
+        type: "user",
+        uri: "spotify:user:spotify"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MjYzNjEzMzgsMDAwMDAwMDBmM2I5YmI5MGE5MjBjODhmNGMyNjIwNWRhMDc1OTlkNg==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/37i9dQZF1E35XDiiTuHpWp/tracks",
+        total: 50
+      },
+      type: "playlist",
+      uri: "spotify:playlist:37i9dQZF1E35XDiiTuHpWp"
+    },
+    {
+      collaborative: false,
+      description: "The songs you loved most this year, all wrapped up.",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/37i9dQZF1Et8STZg23XxHR"
+      },
+      href: "https://api.spotify.com/v1/playlists/37i9dQZF1Et8STZg23XxHR",
+      id: "37i9dQZF1Et8STZg23XxHR",
+      images: [
+        {
+          height: null,
+          url:
+            "https://lineup-images.scdn.co/your-top-songs-2019_DEFAULT-en.jpg",
+          width: null
+        }
+      ],
+      name: "Your Top Songs 2019",
+      owner: {
+        display_name: "Spotify",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/spotify"
+        },
+        href: "https://api.spotify.com/v1/users/spotify",
+        id: "spotify",
+        type: "user",
+        uri: "spotify:user:spotify"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MjYyNjk2NDQsMDAwMDAwMDBlMWI4ZTBjNDliYmU2Yjg1Mjk3YzljNGY3Yzg4MjM4Mg==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/37i9dQZF1Et8STZg23XxHR/tracks",
+        total: 100
+      },
+      type: "playlist",
+      uri: "spotify:playlist:37i9dQZF1Et8STZg23XxHR"
+    },
+    {
+      collaborative: false,
+      description: "WYS, Flovry, chief. and more",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/37i9dQZF1E35DwkV0bDkIW"
+      },
+      href: "https://api.spotify.com/v1/playlists/37i9dQZF1E35DwkV0bDkIW",
+      id: "37i9dQZF1E35DwkV0bDkIW",
+      images: [
+        {
+          height: null,
+          url:
+            "https://dailymix-images.scdn.co/v1/img/cb8713e17be6925e89fc896e6b70e8da4cea9f90/1/en/default",
+          width: null
+        }
+      ],
+      name: "Daily Mix 1",
+      owner: {
+        display_name: "Spotify",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/spotify"
+        },
+        href: "https://api.spotify.com/v1/users/spotify",
+        id: "spotify",
+        type: "user",
+        uri: "spotify:user:spotify"
+      },
+      primary_color: null,
+      public: true,
+      snapshot_id:
+        "MjYzNjEzMzgsMDAwMDAwMDAwY2JlYzk2OGE4M2MwMTM2M2NjMDJmNDA0NTdjMzE3Yg==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/37i9dQZF1E35DwkV0bDkIW/tracks",
+        total: 50
+      },
+      type: "playlist",
+      uri: "spotify:playlist:37i9dQZF1E35DwkV0bDkIW"
+    },
+    {
+      collaborative: false,
+      description:
+        "for jessesses b&#x27;day, to be played from start to finish x",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/2gJfaVSDuMMenCDptHrUn5"
+      },
+      href: "https://api.spotify.com/v1/playlists/2gJfaVSDuMMenCDptHrUn5",
+      id: "2gJfaVSDuMMenCDptHrUn5",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b273066b837095e31189aea7b2b7ab67616d0000b273a637ab26db3b432b1a996a12ab67616d0000b273f7cfeafccf5baa51b76dbcc6ab67616d0000b273f804882be61414177d9fc281",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b273066b837095e31189aea7b2b7ab67616d0000b273a637ab26db3b432b1a996a12ab67616d0000b273f7cfeafccf5baa51b76dbcc6ab67616d0000b273f804882be61414177d9fc281",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b273066b837095e31189aea7b2b7ab67616d0000b273a637ab26db3b432b1a996a12ab67616d0000b273f7cfeafccf5baa51b76dbcc6ab67616d0000b273f804882be61414177d9fc281",
+          width: 60
+        }
+      ],
+      name: "jessssssb'day",
+      owner: {
+        display_name: "Joseph De Garr Wilkinson",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/josephdegarr"
+        },
+        href: "https://api.spotify.com/v1/users/josephdegarr",
+        id: "josephdegarr",
+        type: "user",
+        uri: "spotify:user:josephdegarr"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "NTEsNzYwMzZkMmE5MGQ3ODJiOTk3NzU5MjhlZGQzMmE2NGE3NGE4OGY4Yg==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/2gJfaVSDuMMenCDptHrUn5/tracks",
+        total: 20
+      },
+      type: "playlist",
+      uri: "spotify:playlist:2gJfaVSDuMMenCDptHrUn5"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/5nYcjQsqqE3fB2fxEZiwbK"
+      },
+      href: "https://api.spotify.com/v1/playlists/5nYcjQsqqE3fB2fxEZiwbK",
+      id: "5nYcjQsqqE3fB2fxEZiwbK",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/33f410e5722bb341fd3beb8abd36a3dba38a5479ab67616d0000b2732ca5d2f0c0e8d399ebf41e48ab67616d0000b27348ee010a6e1cc58f984524a8ab67616d0000b273691c60fbe6ad455aded74654",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/33f410e5722bb341fd3beb8abd36a3dba38a5479ab67616d0000b2732ca5d2f0c0e8d399ebf41e48ab67616d0000b27348ee010a6e1cc58f984524a8ab67616d0000b273691c60fbe6ad455aded74654",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/33f410e5722bb341fd3beb8abd36a3dba38a5479ab67616d0000b2732ca5d2f0c0e8d399ebf41e48ab67616d0000b27348ee010a6e1cc58f984524a8ab67616d0000b273691c60fbe6ad455aded74654",
+          width: 60
+        }
+      ],
+      name: "Daily Mix 5 - MADE FOR JESSIE:27.06.19",
+      owner: {
+        display_name: "Jessie Jane Mcdonald",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/stanleymeowskers"
+        },
+        href: "https://api.spotify.com/v1/users/stanleymeowskers",
+        id: "stanleymeowskers",
+        type: "user",
+        uri: "spotify:user:stanleymeowskers"
+      },
+      primary_color: null,
+      public: true,
+      snapshot_id: "Miw2ZDdlZmNiOWUxYTFjMjllOWFlMjE5ZjQ4OTNhZGNjNWM1YWJhNTM1",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/5nYcjQsqqE3fB2fxEZiwbK/tracks",
+        total: 30
+      },
+      type: "playlist",
+      uri: "spotify:playlist:5nYcjQsqqE3fB2fxEZiwbK"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/1STUPSNvElJtGOGgQUoxQu"
+      },
+      href: "https://api.spotify.com/v1/playlists/1STUPSNvElJtGOGgQUoxQu",
+      id: "1STUPSNvElJtGOGgQUoxQu",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b2731d2453b3e68b7bcb21dc1bd4ab67616d0000b273999cbc0b644753a3dff9e675ab67616d0000b273a2b1d3e73c66663c01351bcfab67616d0000b273fab7579a7ac6733460f83256",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b2731d2453b3e68b7bcb21dc1bd4ab67616d0000b273999cbc0b644753a3dff9e675ab67616d0000b273a2b1d3e73c66663c01351bcfab67616d0000b273fab7579a7ac6733460f83256",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b2731d2453b3e68b7bcb21dc1bd4ab67616d0000b273999cbc0b644753a3dff9e675ab67616d0000b273a2b1d3e73c66663c01351bcfab67616d0000b273fab7579a7ac6733460f83256",
+          width: 60
+        }
+      ],
+      name: "jesssssssssssssssssssssssssssss 2019",
+      owner: {
+        display_name: "Joseph De Garr Wilkinson",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/josephdegarr"
+        },
+        href: "https://api.spotify.com/v1/users/josephdegarr",
+        id: "josephdegarr",
+        type: "user",
+        uri: "spotify:user:josephdegarr"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "NjAsNjY1OTJjMzlmNmFmYmQ2NmUyODE4NzcwMjNhNmNkZmU4MzIyZjQ4MA==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/1STUPSNvElJtGOGgQUoxQu/tracks",
+        total: 22
+      },
+      type: "playlist",
+      uri: "spotify:playlist:1STUPSNvElJtGOGgQUoxQu"
+    },
+    {
+      collaborative: false,
+      description:
+        "The best alternative songs of the decade so far. Cover: Tame Impala",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/37i9dQZF1DX873GaRGUmPl"
+      },
+      href: "https://api.spotify.com/v1/playlists/37i9dQZF1DX873GaRGUmPl",
+      id: "37i9dQZF1DX873GaRGUmPl",
+      images: [
+        {
+          height: null,
+          url:
+            "https://pl.scdn.co/images/pl/default/4a3d0ccebd70da1860b92c1b582d2b5fcc6fb6c9",
+          width: null
+        }
+      ],
+      name: "Alternative 10s",
+      owner: {
+        display_name: "Spotify",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/spotify"
+        },
+        href: "https://api.spotify.com/v1/users/spotify",
+        id: "spotify",
+        type: "user",
+        uri: "spotify:user:spotify"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MTU4MTY4MDMzMCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/37i9dQZF1DX873GaRGUmPl/tracks",
+        total: 80
+      },
+      type: "playlist",
+      uri: "spotify:playlist:37i9dQZF1DX873GaRGUmPl"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/4lbVHGaH4MwVjmUUVqLY5f"
+      },
+      href: "https://api.spotify.com/v1/playlists/4lbVHGaH4MwVjmUUVqLY5f",
+      id: "4lbVHGaH4MwVjmUUVqLY5f",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b273422b5b87cba9f52b0620bf37ab67616d0000b2735361d2498aca0258961a4357ab67616d0000b273c2ca8f9b52f42edab9890ea6ab67616d0000b273f7a1a6fb3103dd59e7b9d875",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b273422b5b87cba9f52b0620bf37ab67616d0000b2735361d2498aca0258961a4357ab67616d0000b273c2ca8f9b52f42edab9890ea6ab67616d0000b273f7a1a6fb3103dd59e7b9d875",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b273422b5b87cba9f52b0620bf37ab67616d0000b2735361d2498aca0258961a4357ab67616d0000b273c2ca8f9b52f42edab9890ea6ab67616d0000b273f7a1a6fb3103dd59e7b9d875",
+          width: 60
+        }
+      ],
+      name: "Daily Mix 2 - MADE FOR JESSIE:12.12.18",
+      owner: {
+        display_name: "Jessie Jane Mcdonald",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/stanleymeowskers"
+        },
+        href: "https://api.spotify.com/v1/users/stanleymeowskers",
+        id: "stanleymeowskers",
+        type: "user",
+        uri: "spotify:user:stanleymeowskers"
+      },
+      primary_color: null,
+      public: true,
+      snapshot_id: "Miw0MzAxN2E1ZDUwM2U0NmQ4NDFhMTE4NjgxY2UxN2Y3MGIwOWUyYmNj",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/4lbVHGaH4MwVjmUUVqLY5f/tracks",
+        total: 15
+      },
+      type: "playlist",
+      uri: "spotify:playlist:4lbVHGaH4MwVjmUUVqLY5f"
+    },
+    {
+      collaborative: false,
+      description: "The songs you loved most this year, all wrapped up.",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/37i9dQZF1E9MYrGBZOuxco"
+      },
+      href: "https://api.spotify.com/v1/playlists/37i9dQZF1E9MYrGBZOuxco",
+      id: "37i9dQZF1E9MYrGBZOuxco",
+      images: [
+        {
+          height: null,
+          url:
+            "https://lineup-images.scdn.co/your-top-songs-2017_DEFAULT-en.jpg",
+          width: null
+        }
+      ],
+      name: "Your Top Songs 2017",
+      owner: {
+        display_name: "Spotify",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/spotify"
+        },
+        href: "https://api.spotify.com/v1/users/spotify",
+        id: "spotify",
+        type: "user",
+        uri: "spotify:user:spotify"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MjUxODI3MTgsMDAwMDAwMDA0NzgxNThiMWQ0NTg4NWYxN2M3M2Q3MDhiMDZlZjhiNQ==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/37i9dQZF1E9MYrGBZOuxco/tracks",
+        total: 100
+      },
+      type: "playlist",
+      uri: "spotify:playlist:37i9dQZF1E9MYrGBZOuxco"
+    },
+    {
+      collaborative: false,
+      description:
+        "Boy bands, girl groups, britpop, grunge & a golden era for hip hop.",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/37i9dQZF1DXbTxeAdrVG2l"
+      },
+      href: "https://api.spotify.com/v1/playlists/37i9dQZF1DXbTxeAdrVG2l",
+      id: "37i9dQZF1DXbTxeAdrVG2l",
+      images: [
+        {
+          height: null,
+          url:
+            "https://pl.scdn.co/images/pl/default/0b2d0b95aa3c122ef3fc8dd231257cd9d639ee30",
+          width: null
+        }
+      ],
+      name: "All Out 90s",
+      owner: {
+        display_name: "Spotify",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/spotify"
+        },
+        href: "https://api.spotify.com/v1/users/spotify",
+        id: "spotify",
+        type: "user",
+        uri: "spotify:user:spotify"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MTU4MTY4MDMzMCwwMDAwMDAwMGQ0MWQ4Y2Q5OGYwMGIyMDRlOTgwMDk5OGVjZjg0Mjdl",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/37i9dQZF1DXbTxeAdrVG2l/tracks",
+        total: 90
+      },
+      type: "playlist",
+      uri: "spotify:playlist:37i9dQZF1DXbTxeAdrVG2l"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/3uF723L4diASwCMCAhR1Uf"
+      },
+      href: "https://api.spotify.com/v1/playlists/3uF723L4diASwCMCAhR1Uf",
+      id: "3uF723L4diASwCMCAhR1Uf",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b2730df5d62fc2d839188b4f9e15ab67616d0000b27338a6cc0b38036949ed001f9aab67616d0000b273e0291335793a337f21d732c4d12a754e4329b8b5c4199a9cda75d1ced01f758b",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b2730df5d62fc2d839188b4f9e15ab67616d0000b27338a6cc0b38036949ed001f9aab67616d0000b273e0291335793a337f21d732c4d12a754e4329b8b5c4199a9cda75d1ced01f758b",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b2730df5d62fc2d839188b4f9e15ab67616d0000b27338a6cc0b38036949ed001f9aab67616d0000b273e0291335793a337f21d732c4d12a754e4329b8b5c4199a9cda75d1ced01f758b",
+          width: 60
+        }
+      ],
+      name: "daily mix 25jul",
+      owner: {
+        display_name: "Jessie Jane Mcdonald",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/stanleymeowskers"
+        },
+        href: "https://api.spotify.com/v1/users/stanleymeowskers",
+        id: "stanleymeowskers",
+        type: "user",
+        uri: "spotify:user:stanleymeowskers"
+      },
+      primary_color: null,
+      public: true,
+      snapshot_id: "NCw0YzZiNmViNzZiOTQ5OGI3NGJiYzkyYzQwOTg0NzBiZjMxMTFlZDMw",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/3uF723L4diASwCMCAhR1Uf/tracks",
+        total: 35
+      },
+      type: "playlist",
+      uri: "spotify:playlist:3uF723L4diASwCMCAhR1Uf"
+    },
+    {
+      collaborative: false,
+      description:
+        "Time for Your Summer Rewind! We’ve made you a new playlist featuring your old summer favorites.",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/37i9dQZF1CAjkEUoD1WPzP"
+      },
+      href: "https://api.spotify.com/v1/playlists/37i9dQZF1CAjkEUoD1WPzP",
+      id: "37i9dQZF1CAjkEUoD1WPzP",
+      images: [
+        {
+          height: null,
+          url: "https://lineup-images.scdn.co/YSR-2019_DEFAULT-en.jpg",
+          width: null
+        }
+      ],
+      name: "Your Summer Rewind",
+      owner: {
+        display_name: "Spotify",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/spotify"
+        },
+        href: "https://api.spotify.com/v1/users/spotify",
+        id: "spotify",
+        type: "user",
+        uri: "spotify:user:spotify"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MjYwMjMzMjIsMDAwMDAwMDA3OTc0ZjVjNWI1NTI5MmQyN2E0OTMzOGU3MTA4ZGMxMw==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/37i9dQZF1CAjkEUoD1WPzP/tracks",
+        total: 50
+      },
+      type: "playlist",
+      uri: "spotify:playlist:37i9dQZF1CAjkEUoD1WPzP"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/24uy9Xe6Jj7TR4riyouptS"
+      },
+      href: "https://api.spotify.com/v1/playlists/24uy9Xe6Jj7TR4riyouptS",
+      id: "24uy9Xe6Jj7TR4riyouptS",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b27373866b80ce3b02d0ff4b0e04ab67616d0000b273743482f365f096e8c4abfab7ab67616d0000b273b1235c0092f6658466e96819ab67616d0000b273ca5f01ed1fd0f7ad65ec5ec2",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b27373866b80ce3b02d0ff4b0e04ab67616d0000b273743482f365f096e8c4abfab7ab67616d0000b273b1235c0092f6658466e96819ab67616d0000b273ca5f01ed1fd0f7ad65ec5ec2",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b27373866b80ce3b02d0ff4b0e04ab67616d0000b273743482f365f096e8c4abfab7ab67616d0000b273b1235c0092f6658466e96819ab67616d0000b273ca5f01ed1fd0f7ad65ec5ec2",
+          width: 60
+        }
+      ],
+      name: "Daily Mix 4 - MADE FOR JESSIE:10.03.18",
+      owner: {
+        display_name: "Jessie Jane Mcdonald",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/stanleymeowskers"
+        },
+        href: "https://api.spotify.com/v1/users/stanleymeowskers",
+        id: "stanleymeowskers",
+        type: "user",
+        uri: "spotify:user:stanleymeowskers"
+      },
+      primary_color: null,
+      public: true,
+      snapshot_id: "Myw1MWY0MWRjZmNhY2QzYWQ1N2YzMWI3YTFjYjg5NjgzMDg1NzA2OTU1",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/24uy9Xe6Jj7TR4riyouptS/tracks",
+        total: 30
+      },
+      type: "playlist",
+      uri: "spotify:playlist:24uy9Xe6Jj7TR4riyouptS"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/4Sj9hxBVdO0UoFmg0jzVjb"
+      },
+      href: "https://api.spotify.com/v1/playlists/4Sj9hxBVdO0UoFmg0jzVjb",
+      id: "4Sj9hxBVdO0UoFmg0jzVjb",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/73582b3ffc7f9ae78a0e68a65152a2a805a4ecbcab67616d0000b273e1d43640903e1ab20aea9b60ab67616d0000b273e74a5c446c7c2714ec42f588f98658bbfa89d2b1224407a55b277507a8c20c65",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/73582b3ffc7f9ae78a0e68a65152a2a805a4ecbcab67616d0000b273e1d43640903e1ab20aea9b60ab67616d0000b273e74a5c446c7c2714ec42f588f98658bbfa89d2b1224407a55b277507a8c20c65",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/73582b3ffc7f9ae78a0e68a65152a2a805a4ecbcab67616d0000b273e1d43640903e1ab20aea9b60ab67616d0000b273e74a5c446c7c2714ec42f588f98658bbfa89d2b1224407a55b277507a8c20c65",
+          width: 60
+        }
+      ],
+      name: "Jessesses Warm Up Playlist // Jess is soooo Indie ",
+      owner: {
+        display_name: "Joseph De Garr Wilkinson",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/josephdegarr"
+        },
+        href: "https://api.spotify.com/v1/users/josephdegarr",
+        id: "josephdegarr",
+        type: "user",
+        uri: "spotify:user:josephdegarr"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MjYsZTIxNzczYjVkZDVlMGQzNDIzZTQwYThkNjRiY2JiNjQ0YzE5NDkzMw==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/4Sj9hxBVdO0UoFmg0jzVjb/tracks",
+        total: 26
+      },
+      type: "playlist",
+      uri: "spotify:playlist:4Sj9hxBVdO0UoFmg0jzVjb"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/6XpcaIRK38nwbsTRslDL6q"
+      },
+      href: "https://api.spotify.com/v1/playlists/6XpcaIRK38nwbsTRslDL6q",
+      id: "6XpcaIRK38nwbsTRslDL6q",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b2731859c73b53f301235668ff6eab67616d0000b273696d98f13a13a750de95ec93ab67616d0000b273d6dfafe62fef3ad433ff77d8acb3777744ef44bc371280e5e8e35c27fcd568bf",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b2731859c73b53f301235668ff6eab67616d0000b273696d98f13a13a750de95ec93ab67616d0000b273d6dfafe62fef3ad433ff77d8acb3777744ef44bc371280e5e8e35c27fcd568bf",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b2731859c73b53f301235668ff6eab67616d0000b273696d98f13a13a750de95ec93ab67616d0000b273d6dfafe62fef3ad433ff77d8acb3777744ef44bc371280e5e8e35c27fcd568bf",
+          width: 60
+        }
+      ],
+      name: "josephs downloads",
+      owner: {
+        display_name: "Jessie Jane Mcdonald",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/stanleymeowskers"
+        },
+        href: "https://api.spotify.com/v1/users/stanleymeowskers",
+        id: "stanleymeowskers",
+        type: "user",
+        uri: "spotify:user:stanleymeowskers"
+      },
+      primary_color: null,
+      public: true,
+      snapshot_id: "Nyw1MzhiNzMwNDUxODIyMzhhMmUzNmNhNTA2YjA5NjUzMTVlM2QzMmMy",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/6XpcaIRK38nwbsTRslDL6q/tracks",
+        total: 5
+      },
+      type: "playlist",
+      uri: "spotify:playlist:6XpcaIRK38nwbsTRslDL6q"
+    },
+    {
+      collaborative: false,
+      description: "",
+      external_urls: {
+        spotify: "https://open.spotify.com/playlist/5qTRrMUAbcdtQc3cMJddNA"
+      },
+      href: "https://api.spotify.com/v1/playlists/5qTRrMUAbcdtQc3cMJddNA",
+      id: "5qTRrMUAbcdtQc3cMJddNA",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://mosaic.scdn.co/640/ab67616d0000b273466f56d5f68eec9b0866e894ab67616d0000b2734d87534f40a130a3755a4737ab67616d0000b273945696d01c650eeade335ac9ab67616d0000b273bea02cf520fe96971850ce17",
+          width: 640
+        },
+        {
+          height: 300,
+          url:
+            "https://mosaic.scdn.co/300/ab67616d0000b273466f56d5f68eec9b0866e894ab67616d0000b2734d87534f40a130a3755a4737ab67616d0000b273945696d01c650eeade335ac9ab67616d0000b273bea02cf520fe96971850ce17",
+          width: 300
+        },
+        {
+          height: 60,
+          url:
+            "https://mosaic.scdn.co/60/ab67616d0000b273466f56d5f68eec9b0866e894ab67616d0000b2734d87534f40a130a3755a4737ab67616d0000b273945696d01c650eeade335ac9ab67616d0000b273bea02cf520fe96971850ce17",
+          width: 60
+        }
+      ],
+      name: "jjjj xmas",
+      owner: {
+        display_name: "Joseph De Garr Wilkinson",
+        external_urls: {
+          spotify: "https://open.spotify.com/user/josephdegarr"
+        },
+        href: "https://api.spotify.com/v1/users/josephdegarr",
+        id: "josephdegarr",
+        type: "user",
+        uri: "spotify:user:josephdegarr"
+      },
+      primary_color: null,
+      public: false,
+      snapshot_id:
+        "MzMsNDQ2NWJlNzI3NTE4Mjg0M2E5OTcxNjVhZjMxOGY5N2IzYjZmOWZmZg==",
+      tracks: {
+        href:
+          "https://api.spotify.com/v1/playlists/5qTRrMUAbcdtQc3cMJddNA/tracks",
+        total: 17
+      },
+      type: "playlist",
+      uri: "spotify:playlist:5qTRrMUAbcdtQc3cMJddNA"
+    }
+  ],
+  limit: 20,
+  next:
+    "https://api.spotify.com/v1/users/stanleymeowskers/playlists?offset=20&limit=20",
+  offset: 0,
+  previous: null,
+  total: 46
+};

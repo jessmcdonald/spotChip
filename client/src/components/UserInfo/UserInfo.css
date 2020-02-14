@@ -1,12 +1,13 @@
 .UserProfile {
   background-color: #191414;
   color: #fff;
-  height: 50vh;
+  padding: 2vw;
 }
 
 .ProfileImg {
   border-radius: 50%;
   height: 20vh;
+  margin-top: 1vw;
 }
 
 .currentlyPlaying {

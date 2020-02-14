@@ -10,6 +10,8 @@ class UserInfo extends React.Component {
     super(props);
 
     this.state = {
+      //urrentlyPlaying: currentlyPlaying,
+      //following: following
       currentlyPlaying: null,
       following: null
     };

@@ -9,6 +9,7 @@ class RecentlyPlayed extends React.Component {
     super(props);
 
     this.state = {
+      //recentlyPlayed: recentlyPlayed
       recentlyPlayed: null
     };
   }
@@ -38,6 +39,7 @@ class RecentlyPlayed extends React.Component {
   render() {
     return (
       <div className="RecentlyPlayed">
+        <h2>Recently Played</h2>
         {this.state.recentlyPlayed ? (
           <table width="100%" className="recentlyPlayedTable">
             <tr>
