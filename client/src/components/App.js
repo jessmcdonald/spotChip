@@ -43,7 +43,6 @@ class App extends React.Component {
       })
       .then(response => {
         this.setState({ user: response.data });
-        console.log(this.state.user);
       })
       .catch(function(error) {
         console.log(error);
