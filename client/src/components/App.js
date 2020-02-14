@@ -6,6 +6,7 @@ import { getHashParams } from "../spotify";
 import UserInfo from "./UserInfo/UserInfo";
 import RecentlyPlayed from "./RecentlyPlayed/RecentlyPlayed";
 import Playlists from "./Playlists/Playlists";
+import RecentGenres from "./RecentGenres/RecentGenres";
 
 import { user } from "./mockData";
 
@@ -26,8 +27,8 @@ class App extends React.Component {
     const access_token = params.access_token;
     const refresh_token = params.access_token;
     this.state = {
-      //user: user
-      user: null
+      user: user
+      //user: null
     };
   }
 
@@ -73,9 +74,15 @@ class App extends React.Component {
               </div>
               <div className="item-c">
                 <Playlists
-                  key={this.state.user.display_name}
-                  id={this.state.user.display_name}
-                  user={this.state.user}
+                  key="playlistsgrid"
+                  id="playlistsgrid"
+                  access_token={access_token}
+                />
+              </div>
+              <div className="item-d">
+                <RecentGenres
+                  key="recentgenreschart"
+                  id="recentgenreschart"
                   access_token={access_token}
                 />
               </div>

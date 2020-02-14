@@ -10,10 +10,10 @@ class UserInfo extends React.Component {
     super(props);
 
     this.state = {
-      //urrentlyPlaying: currentlyPlaying,
-      //following: following
-      currentlyPlaying: null,
-      following: null
+      currentlyPlaying: currentlyPlaying,
+      following: following
+      //currentlyPlaying: null,
+      //following: null
     };
   }
 
@@ -81,7 +81,7 @@ class UserInfo extends React.Component {
         {this.state.currentlyPlaying ? (
           <div className="currentlyPlaying">
             <img src={nowPlayingIcon} className="nowPlayingIcon" />
-            Currently Playing: {this.state.currentlyPlaying.item.name} -{" "}
+            {this.state.currentlyPlaying.item.name} -{" "}
             {this.state.currentlyPlaying.item.album.artists[0].name}
           </div>
         ) : (
