@@ -1,7 +1,7 @@
 import React, { PureComponent } from "react";
 import { Treemap, ResponsiveContainer } from "recharts";
 import axios from "axios";
-import "./RecentGenres.css";
+import "./RecentGenresChart.css";
 
 import { topArtists } from "../mockData";
 
@@ -83,7 +83,7 @@ class CustomizedContent extends PureComponent {
   }
 }
 
-export default class RecentGenres extends PureComponent {
+export default class RecentGenresChart extends PureComponent {
   //   constructor(props) {
   //     super(props);
 
