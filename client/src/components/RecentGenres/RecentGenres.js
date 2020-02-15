@@ -1,7 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./RecentGenres.css";
-import { RecentGenresChart } from "../RecentGenresChart/RecentGenresChart";
+import RecentGenresChart from "../RecentGenresChart/RecentGenresChart";
 
 import { topArtists } from "../mockData";
 
