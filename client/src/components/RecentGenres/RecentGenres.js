@@ -18,7 +18,9 @@ class RecentGenres extends React.Component {
 
   componentDidMount() {
     this.getTopArtists();
-    this.getGenreData();
+    if (this.state.topArtists !== null) {
+      this.getGenreData();
+    }
   }
 
   getTopArtists = () => {
