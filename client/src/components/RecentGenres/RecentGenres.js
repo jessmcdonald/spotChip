@@ -29,8 +29,8 @@ class RecentGenres extends React.Component {
       })
       .then(response => {
         this.setState({ topArtists: response.data });
+        this.getGenreData();
       })
-      .then(this.getGenreData())
       .catch(function(error) {
         console.log(error);
       });
