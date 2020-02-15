@@ -6,7 +6,7 @@ import { getHashParams } from "../spotify";
 import UserInfo from "./UserInfo/UserInfo";
 import RecentlyPlayed from "./RecentlyPlayed/RecentlyPlayed";
 import Playlists from "./Playlists/Playlists";
-import RecentGenres from "./RecentGenresChart/RecentGenresChart";
+import RecentGenres from "./RecentGenres/RecentGenres";
 
 import { user } from "./mockData";
 
