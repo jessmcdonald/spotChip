@@ -77,6 +77,7 @@ class RecentGenres extends React.Component {
     return (
       <div>
         {this.state.topArtists ? (
+            this.getGenreData()
           <div>
             <h2>Recent Genres</h2>
             <RecentGenresChart data={this.state.genreArray} />
