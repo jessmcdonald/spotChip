@@ -4,28 +4,28 @@ import "./RecentGenresChart.css";
 
 //chart info
 
-// const data = [
-//   {
-//     name: "sad core",
-//     size: 100
-//   },
-//   {
-//     name: "anti folk",
-//     size: 600
-//   },
-//   {
-//     name: "slow core",
-//     size: 300
-//   },
-//   {
-//     name: "indie rock",
-//     size: 400
-//   },
-//   {
-//     name: "sad rock",
-//     size: 300
-//   }
-// ];
+const data = [
+  {
+    name: "sad core",
+    size: 100
+  },
+  {
+    name: "anti folk",
+    size: 600
+  },
+  {
+    name: "slow core",
+    size: 300
+  },
+  {
+    name: "indie rock",
+    size: 400
+  },
+  {
+    name: "sad rock",
+    size: 300
+  }
+];
 
 const COLORS = ["#1db954", "#22db63", "#b91d82", "#e141a9", "#e17a41"];
 
@@ -90,7 +90,7 @@ export default class RecentGenresChart extends PureComponent {
           <Treemap
             width={400}
             height={200}
-            data={this.props.data}
+            data={data}
             dataKey="size"
             ratio={4 / 3}
             stroke="#fff"
