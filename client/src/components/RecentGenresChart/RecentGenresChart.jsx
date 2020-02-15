@@ -82,7 +82,7 @@ class CustomizedContent extends PureComponent {
   }
 }
 
-export default class RecentGenresChart extends PureComponent {
+class RecentGenresChart extends PureComponent {
   render() {
     return (
       <div>
@@ -102,3 +102,5 @@ export default class RecentGenresChart extends PureComponent {
     );
   }
 }
+
+export default RecentGenresChart;
