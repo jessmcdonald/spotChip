@@ -62,11 +62,10 @@ class RecentGenres extends React.Component {
     this.state.topArtists.items.map(item => newArray.push(item.genres));
     let genreArray = [].concat.apply([], newArray);
     let newGenresArray = this.compressGenreArray(genreArray);
-    this.setState({
-      genreArray: newGenresArray
-        .sort((a, b) => (a.size > b.size ? 1 : -1))
-        .reverse()
-    });
+    let topGenres = newGenresArray
+      .sort((a, b) => (a.size > b.size ? 1 : -1))
+      .reverse();
+    this.setState({ genreArray: topGenres.splice(5) });
     console.log(this.state.genreArray);
   };
 

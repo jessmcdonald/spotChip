@@ -29,7 +29,6 @@ class RecentlyPlayed extends React.Component {
       })
       .then(response => {
         this.setState({ recentlyPlayed: response.data.items });
-        console.log(this.state.recentlyPlayed);
       })
       .catch(function(error) {
         console.log(error);
