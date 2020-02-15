@@ -29,7 +29,6 @@ import { topArtists } from "../mockData";
 //   }
 // ];
 
-const data = this.props.data;
 const COLORS = ["#1db954", "#22db63", "#b91d82", "#e141a9", "#e17a41"];
 
 class CustomizedContent extends PureComponent {
@@ -97,7 +96,7 @@ export default class RecentGenresChart extends PureComponent {
           <Treemap
             width={400}
             height={200}
-            data={data}
+            data={this.props.data}
             dataKey="size"
             ratio={4 / 3}
             stroke="#fff"

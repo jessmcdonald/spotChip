@@ -9,8 +9,8 @@ class RecentlyPlayed extends React.Component {
     super(props);
 
     this.state = {
-      recentlyPlayed: recentlyPlayed
-      //recentlyPlayed: null
+      //recentlyPlayed: recentlyPlayed
+      recentlyPlayed: null
     };
   }
 
