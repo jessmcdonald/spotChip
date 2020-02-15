@@ -17,7 +17,7 @@ class RecentGenres extends React.Component {
   }
 
   componentDidMount() {
-    this.getTopArtists().then(this.getGenreData());
+    this.getTopArtists();
   }
 
   getTopArtists = () => {
@@ -30,6 +30,7 @@ class RecentGenres extends React.Component {
       .then(response => {
         this.setState({ topArtists: response.data });
       })
+      .then(this.getGenreData())
       .catch(function(error) {
         console.log(error);
       });
