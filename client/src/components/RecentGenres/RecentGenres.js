@@ -72,7 +72,7 @@ class RecentGenres extends React.Component {
   render() {
     return (
       <div>
-        {this.state.topArtists ? (
+        {this.state.genreArray ? (
           <div>
             <h2>Recent Genres</h2>
             <RecentGenresChart data={this.state.genreArray} />
