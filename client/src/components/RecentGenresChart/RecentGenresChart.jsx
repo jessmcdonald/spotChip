@@ -2,8 +2,6 @@ import React, { PureComponent } from "react";
 import { Treemap, ResponsiveContainer } from "recharts";
 import "./RecentGenresChart.css";
 
-import { topArtists } from "../mockData";
-
 //chart info
 
 // const data = [
@@ -85,10 +83,6 @@ class CustomizedContent extends PureComponent {
 }
 
 export default class RecentGenresChart extends PureComponent {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <div>
