@@ -89,7 +89,7 @@ class App extends React.Component {
             </div>
           ) : (
             <div id="login" className="App-login">
-              <h1>Spotify Spot</h1>
+              <h1>SpotChip</h1>
 
               <a
                 href="/login"
