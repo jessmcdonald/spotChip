@@ -90,7 +90,7 @@ class RecentGenresChart extends PureComponent {
           <Treemap
             width={400}
             height={200}
-            data={data}
+            data={this.props.data}
             dataKey="size"
             ratio={4 / 3}
             stroke="#fff"
