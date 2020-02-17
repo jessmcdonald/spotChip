@@ -97,14 +97,14 @@ class UserInfo extends React.Component {
 
         <div class="nav-panel UPItem">
           <Router>
-            <Link to="/">
-              <button class="nav-button">Dashboard</button>
+            <Link to="/" className="RouteLink">
+              <button className="nav-button">Dashboard</button>
             </Link>
-            <Link to="/toptracksartists">
-              <button class="nav-button">Top Artists + Tracks</button>
+            <Link to="/toptracksartists" className="RouteLink">
+              <button className="nav-button">Top Artists + Tracks</button>
             </Link>
-            <Link to="/shows">
-              <button class="nav-button">Find Shows</button>
+            <Link to="/shows" className="RouteLink">
+              <button className="nav-button">Find Shows</button>
             </Link>
           </Router>
         </div>
