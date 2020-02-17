@@ -1,5 +1,5 @@
-import React, { PureComponent, Text } from "react";
-import { Treemap, ResponsiveContainer } from "recharts";
+import React, { PureComponent } from "react";
+import { Treemap, ResponsiveContainer, Text } from "recharts";
 import "./RecentGenresChart.css";
 
 //chart info
@@ -70,18 +70,34 @@ class CustomizedContent extends PureComponent {
             strokeOpacity: 1 / (depth + 1e-10)
           }}
         />
-        {depth === 1 ? (
-          <text
+        {width > 100 ? (
+          <Text
             x={x + width / 2}
             y={y + height / 2 + 7}
             textAnchor="middle"
             className="chartText"
             stroke="none"
             fill="#191414"
+            width={100}
           >
             {name}
-          </text>
-        ) : null}
+          </Text>
+        ) : (
+          <Text
+            y={width - width * 8.6}
+            x={height - height / 2}
+            textAnchor="middle"
+            className="chartText"
+            stroke="none"
+            fill="#191414"
+            width={100}
+            style={{
+              transform: "rotate(90deg)"
+            }}
+          >
+            {name}
+          </Text>
+        )}
       </g>
     );
   }
