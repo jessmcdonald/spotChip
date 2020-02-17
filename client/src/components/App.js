@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import axios from "axios";
 import { getHashParams } from "../spotify";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import UserInfo from "./UserInfo/UserInfo";
 import RecentlyPlayed from "./RecentlyPlayed/RecentlyPlayed";

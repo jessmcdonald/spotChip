@@ -1,5 +1,7 @@
 import React from "react";
 import axios from "axios";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
 import "./UserInfo.css";
 import nowPlayingIcon from "../../img/playing.png";
 
@@ -94,9 +96,16 @@ class UserInfo extends React.Component {
         </div>
 
         <div class="nav-panel UPItem">
-          <button class="nav-button">Dashboard</button>
-          <button class="nav-button">Top Artists + Tracks</button>
-          <button class="nav-button">Find Shows</button>
+          <Link>
+            {" "}
+            <button class="nav-button">Dashboard</button>
+          </Link>
+          <Link>
+            <button class="nav-button">Top Artists + Tracks</button>
+          </Link>
+          <Link>
+            <button class="nav-button">Find Shows</button>
+          </Link>
         </div>
       </div>
     );
