@@ -1,4 +1,4 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent, Text } from "react";
 import { Treemap, ResponsiveContainer } from "recharts";
 import "./RecentGenresChart.css";
 
@@ -55,6 +55,7 @@ class CustomizedContent extends PureComponent {
     return (
       <g>
         <rect
+          className="Rect"
           x={x}
           y={y}
           width={width}
@@ -80,9 +81,6 @@ class CustomizedContent extends PureComponent {
           >
             {name}
           </text>
-        ) : null}
-        {depth === 1 ? (
-          <text x={x + 4} y={y + 18} stroke="none" fill="#191414"></text>
         ) : null}
       </g>
     );

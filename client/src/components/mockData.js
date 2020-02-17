@@ -6047,3 +6047,11 @@ export const topArtists = {
     "https://api.spotify.com/v1/me/top/artists?limit=50&offset=0&time_range=short_term",
   next: null
 };
+
+export const genreArray = [
+  { name: "indie rock", size: 19 },
+  { name: "indie pop", size: 16 },
+  { name: "lo-fi beats", size: 16 },
+  { name: "modern rock", size: 14 },
+  { name: "indietronica", size: 9 }
+];

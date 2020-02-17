@@ -3,16 +3,17 @@ import axios from "axios";
 import "./RecentGenres.css";
 import RecentGenresChart from "../RecentGenresChart/RecentGenresChart";
 
-import { topArtists } from "../mockData";
+import { topArtists, genreArray } from "../mockData";
 
 class RecentGenres extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      //topArtists: topArtists,
-      topArtists: null,
-      genreArray: null
+      topArtists: topArtists,
+      genreArray: genreArray
+      //   topArtists: null,
+      //   genreArray: null
     };
   }
 
@@ -65,7 +66,7 @@ class RecentGenres extends React.Component {
     let topGenres = newGenresArray
       .sort((a, b) => (a.size > b.size ? 1 : -1))
       .reverse();
-    this.setState({ genreArray: topGenres.slice(0, 6) });
+    this.setState({ genreArray: topGenres.slice(0, 5) });
     console.log(this.state.genreArray);
   };
 
