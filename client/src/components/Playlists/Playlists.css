@@ -1,7 +1,8 @@
 .playlistCoverImg {
   object-fit: cover;
-  height: 7.9vw;
-  width: 7.9vw;
+  height: 7.8vw;
+  width: 7.8vw;
   padding-bottom: 0.5vw;
   padding-right: 0.5vw;
+  margin-top: -0.1vw;
 }
