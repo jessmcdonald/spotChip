@@ -7,4 +7,4 @@ Builts using:
 - Spotify API
 - Create-react-app
 
-<img src="https://i.imgur.com/D2x0mJH.jpg" width=500>
+<img src="https://i.imgur.com/D2x0mJH.jpg" width=800>
