@@ -27,14 +27,7 @@ const data = [
   }
 ];
 
-const COLORS = [
-  "#1db954",
-  "#22db63",
-  "#b91d82",
-  "#e141a9",
-  "#e17a41",
-  "#e19541"
-];
+const COLORS = ["#1db954", "#22db63", "#b91d82", "#e141a9", "#e17a41"];
 
 class CustomizedContent extends PureComponent {
   render() {
