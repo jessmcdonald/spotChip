@@ -28,6 +28,10 @@ th {
   text-align: center !important;
 }
 
+.trackName:hover {
+  cursor: pointer;
+}
+
 .tablenumber:hover {
   background-color: #191414;
   background-image: url(../../img/play-sign.png);

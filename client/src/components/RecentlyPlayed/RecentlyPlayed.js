@@ -88,7 +88,14 @@ class RecentlyPlayed extends React.Component {
                     src={item.track.album.images[0].url}
                   />
                 </td>
-                <td>{item.track.name}</td>
+                <td
+                  className="trackName"
+                  onClick={() =>
+                    this.playTrack(item, this.props.getCurrentlyPlaying)
+                  }
+                >
+                  {item.track.name}
+                </td>
                 <td>{item.track.artists[0].name}</td>
               </tr>
             ))}
