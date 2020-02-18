@@ -40,7 +40,7 @@ class RecentlyPlayed extends React.Component {
     axios
       .put("https://api.spotify.com/v1/me/player/play", {
         headers: { Authorization: `Bearer ${access_token}` },
-        data: { uris: [`${item.track.uri}`] }
+        data: { uris: [item.track.uri] }
       })
       .then(console.log(item.track.uri))
       .catch(function(error) {
