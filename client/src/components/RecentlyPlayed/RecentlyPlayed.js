@@ -49,7 +49,9 @@ class RecentlyPlayed extends React.Component {
         "Content-Type": "application/json"
       }
     })
-      .then(console.log(item.track.uri))
+      .then(function(response) {
+        getCurrentlyPlaying();
+      })
       .catch(function(error) {
         console.log(error);
       });
