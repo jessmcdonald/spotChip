@@ -29,7 +29,8 @@ class App extends React.Component {
     const refresh_token = params.access_token;
     this.state = {
       //user: user
-      user: null
+      user: null,
+      currentlyPlaying: null
     };
   }
 
@@ -52,7 +53,6 @@ class App extends React.Component {
   };
 
   getCurrentlyPlaying = () => {
-    let access_token = this.props.access_token;
     axios
       .get("https://api.spotify.com/v1/me/player/currently-playing", {
         headers: { Authorization: `Bearer ${access_token}` }
