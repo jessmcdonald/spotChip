@@ -81,6 +81,7 @@ class App extends React.Component {
                   user={this.state.user}
                   access_token={access_token}
                   getCurrentlyPlaying={this.getCurrentlyPlaying}
+                  currentlyPlaying={this.state.currentlyPlaying}
                 />
               </div>
               <div className="item-b">

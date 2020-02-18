@@ -70,11 +70,11 @@ class UserInfo extends React.Component {
             </div>
           </div>
 
-          {this.state.currentlyPlaying ? (
+          {this.props.currentlyPlaying ? (
             <div className="currentlyPlaying">
               <img src={nowPlayingIcon} className="nowPlayingIcon" />
-              {this.state.currentlyPlaying.item.name} -{" "}
-              {this.state.currentlyPlaying.item.album.artists[0].name}
+              {this.props.currentlyPlaying.item.name} -{" "}
+              {this.props.currentlyPlaying.item.album.artists[0].name}
             </div>
           ) : (
             <div></div>
