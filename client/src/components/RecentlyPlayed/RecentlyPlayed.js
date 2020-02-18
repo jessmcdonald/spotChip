@@ -37,16 +37,18 @@ class RecentlyPlayed extends React.Component {
 
   playTrack = item => {
     let access_token = this.props.access_token;
+    const url = "https://api.spotify.com/v1/me/player/play";
     console.log(access_token);
-    axios
-      .put("https://api.spotify.com/v1/me/player/play", {
-        headers: {
-          Authorization: `Bearer ${access_token}`,
-          Accept: "application/json",
-          "Content-Type": "application/json"
-        },
-        data: { uris: [item.track.uri] }
-      })
+    axios({
+      method: "PUT",
+      url: url,
+      data: { uris: [item.track.uri] },
+      headers: {
+        Authorization: `Bearer ${access_token}`,
+        Accept: "application/json",
+        "Content-Type": "application/json"
+      }
+    })
       .then(console.log(item.track.uri))
       .catch(function(error) {
         console.log(error);
