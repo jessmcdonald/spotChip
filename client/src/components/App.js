@@ -104,7 +104,10 @@ class App extends React.Component {
 
                 <Switch>
                   <Route exact path="/" className="item-c">
-                    <HomeDashboard access_token={access_token} />
+                    <HomeDashboard
+                      access_token={access_token}
+                      getCurrentlyPlaying={this.getCurrentlyPlaying}
+                    />
                   </Route>
                   <Route path="/toptracksartists">
                     <h2>Top tracks + artists</h2>
