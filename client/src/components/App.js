@@ -60,6 +60,7 @@ class App extends React.Component {
       })
       .then(response => {
         this.setState({ currentlyPlaying: response.data });
+        console.log(this.state.currentlyPlaying);
       })
       .catch(function(error) {
         console.log(error);
