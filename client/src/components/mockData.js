@@ -6053,5 +6053,5 @@ export const genreArray = [
   { name: "indie pop", size: 16 },
   { name: "lo-fi beats", size: 16 },
   { name: "modern rock", size: 14 },
-  { name: "indietronica", size: 9 }
+  { name: "indietronica", size: 5 }
 ];

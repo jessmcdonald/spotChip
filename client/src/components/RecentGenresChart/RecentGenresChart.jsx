@@ -63,7 +63,7 @@ class CustomizedContent extends PureComponent {
             strokeOpacity: 1 / (depth + 1e-10)
           }}
         />
-        {width > 100 ? (
+        {depth === 1 ? (
           <Text
             x={x + width / 2}
             y={y + height / 2 + 7}
@@ -75,22 +75,7 @@ class CustomizedContent extends PureComponent {
           >
             {name}
           </Text>
-        ) : (
-          <Text
-            y={width - width * 8.6}
-            x={height - height / 2}
-            textAnchor="middle"
-            className="chartText"
-            stroke="none"
-            fill="#191414"
-            width={100}
-            style={{
-              transform: "rotate(90deg)"
-            }}
-          >
-            {name}
-          </Text>
-        )}
+        ) : null}
       </g>
     );
   }
