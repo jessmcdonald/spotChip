@@ -36,6 +36,7 @@ class App extends React.Component {
 
   componentDidMount() {
     this.getUserInfo();
+    this.getCurrentlyPlaying();
   }
 
   //get user

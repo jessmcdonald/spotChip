@@ -15,7 +15,6 @@ class UserInfo extends React.Component {
     this.state = {
       //   currentlyPlaying: currentlyPlaying,
       //   following: following
-      currentlyPlaying: null,
       following: null
     };
   }
