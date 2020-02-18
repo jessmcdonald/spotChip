@@ -2,6 +2,10 @@ button:focus {
   outline: solid 0.4vh #1db954;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 .UserProfile {
   color: #fff;
   padding: 2vw 2vw 0vw 2vw;
@@ -115,7 +119,7 @@ button:focus {
 }
 
 .playerImg {
-  width: 50%;
+  width: 40%;
   border: solid 0.4vh #4c4c4c;
   border-radius: 50%;
 }

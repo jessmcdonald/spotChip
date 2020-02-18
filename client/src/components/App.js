@@ -28,8 +28,8 @@ class App extends React.Component {
     const access_token = params.access_token;
     const refresh_token = params.access_token;
     this.state = {
-      user: user
-      //user: null
+      //user: user
+      user: null
     };
   }
 
@@ -51,6 +51,20 @@ class App extends React.Component {
       });
   };
 
+  getCurrentlyPlaying = () => {
+    let access_token = this.props.access_token;
+    axios
+      .get("https://api.spotify.com/v1/me/player/currently-playing", {
+        headers: { Authorization: `Bearer ${access_token}` }
+      })
+      .then(response => {
+        this.setState({ currentlyPlaying: response.data });
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  };
+
   render() {
     return (
       <div className="App">
@@ -64,6 +78,7 @@ class App extends React.Component {
                   id={this.state.user.display_name}
                   user={this.state.user}
                   access_token={access_token}
+                  getCurrentlyPlaying={this.getCurrentlyPlaying}
                 />
               </div>
               <div className="item-b">
@@ -71,6 +86,7 @@ class App extends React.Component {
                   key="recentlyplayed"
                   id="recentlyplayed"
                   access_token={access_token}
+                  getCurrentlyPlaying={this.getCurrentlyPlaying}
                 />
               </div>
               <div className="item-c">

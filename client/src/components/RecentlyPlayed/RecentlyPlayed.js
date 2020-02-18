@@ -9,8 +9,8 @@ class RecentlyPlayed extends React.Component {
     super(props);
 
     this.state = {
-      recentlyPlayed: recentlyPlayed
-      //recentlyPlayed: null
+      //recentlyPlayed: recentlyPlayed
+      recentlyPlayed: null
     };
   }
 
@@ -35,6 +35,16 @@ class RecentlyPlayed extends React.Component {
       });
   };
 
+  playTrack = item => {
+    //let access_token = this.props.access_token;
+    // axios.put("https://api.spotify.com/v1/me/player/play", {
+    //   headers: { Authorization: `Bearer ${access_token}` },
+    //   data: { uris: `${item.track.uri}` }
+    // });
+    console.log(item.track.uri);
+    this.props.getCurrentlyPlaying();
+  };
+
   render() {
     return (
       <div className="RecentlyPlayed">
@@ -52,7 +62,12 @@ class RecentlyPlayed extends React.Component {
 
             {this.state.recentlyPlayed.map((item, i) => (
               <tr className="tr">
-                <td className="tablenumber">{i + 1}</td>
+                <td
+                  className="tablenumber"
+                  onClick={() => this.playTrack(item)}
+                >
+                  {i + 1}
+                </td>
                 <td>
                   <img
                     className="playlistImg"

@@ -28,6 +28,20 @@ th {
   text-align: center !important;
 }
 
+.tablenumber:hover {
+  background-color: #191414;
+  background-image: url(../../img/play-sign.png);
+  background-size: 40%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: transparent;
+  cursor: pointer;
+}
+
+tr:hover {
+  background-color: #4c4c4c;
+}
+
 .playlistImg {
   height: 3.5vh;
   border-radius: 50%;

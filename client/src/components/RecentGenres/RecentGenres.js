@@ -10,10 +10,10 @@ class RecentGenres extends React.Component {
     super(props);
 
     this.state = {
-      topArtists: topArtists,
-      genreArray: genreArray
-      //topArtists: null,
-      //genreArray: null
+      //topArtists: topArtists,
+      //genreArray: genreArray
+      topArtists: null,
+      genreArray: null
     };
   }
 

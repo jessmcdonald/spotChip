@@ -13,31 +13,17 @@ class UserInfo extends React.Component {
     super(props);
 
     this.state = {
-      currentlyPlaying: currentlyPlaying,
-      following: following
-      //currentlyPlaying: null,
-      //following: null
+      //   currentlyPlaying: currentlyPlaying,
+      //   following: following
+      currentlyPlaying: null,
+      following: null
     };
   }
 
   componentDidMount() {
-    this.getCurrentlyPlaying();
+    this.props.getCurrentlyPlaying();
     this.getFollowingArtists();
   }
-
-  getCurrentlyPlaying = () => {
-    let access_token = this.props.access_token;
-    axios
-      .get("https://api.spotify.com/v1/me/player/currently-playing", {
-        headers: { Authorization: `Bearer ${access_token}` }
-      })
-      .then(response => {
-        this.setState({ currentlyPlaying: response.data });
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-  };
 
   getFollowingArtists = () => {
     let access_token = this.props.access_token;
