@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import "./UserInfo.css";
 import nowPlayingIcon from "../../img/playing.png";
+import playPause from "../../img/pause-play-button.png";
 
 import { currentlyPlaying, following } from "../mockData";
 
@@ -12,10 +13,10 @@ class UserInfo extends React.Component {
     super(props);
 
     this.state = {
-      //   currentlyPlaying: currentlyPlaying,
-      //   following: following
-      currentlyPlaying: null,
-      following: null
+      currentlyPlaying: currentlyPlaying,
+      following: following
+      //currentlyPlaying: null,
+      //following: null
     };
   }
 
@@ -93,6 +94,11 @@ class UserInfo extends React.Component {
           ) : (
             <div></div>
           )}
+          <div className="trackPlayer">
+            <button className="playerButton">
+              <img src={playPause} className="playerImg" />
+            </button>
+          </div>
         </div>
 
         <div class="nav-panel UPItem">

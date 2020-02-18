@@ -1,3 +1,7 @@
+button:focus {
+  outline: solid 0.4vh #1db954;
+}
+
 .UserProfile {
   color: #fff;
   padding: 2vw 2vw 0vw 2vw;
@@ -91,6 +95,34 @@
 .currentlyPlaying {
   display: flex;
   justify-content: center;
+}
+
+.trackPlayer {
+  margin-top: 3vh;
+  width: 100%;
+}
+
+.playerButton {
+  background-color: #191414;
+  padding: 0px;
+  width: 30%;
+  border: 0px;
+  margin: 0px;
+}
+
+.playerButton:hover {
+  border: 0px;
+}
+
+.playerImg {
+  width: 50%;
+  border: solid 0.4vh #4c4c4c;
+  border-radius: 50%;
+}
+
+.playerImg:hover {
+  border: solid 0.4vh #191414;
+  border-radius: 50%;
 }
 
 .nowPlayingIcon {

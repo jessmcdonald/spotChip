@@ -9,8 +9,8 @@ class Playlists extends React.Component {
     super(props);
 
     this.state = {
-      //playlists: playlists
-      playlists: null
+      playlists: playlists
+      //playlists: null
     };
   }
 
