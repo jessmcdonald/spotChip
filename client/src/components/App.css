@@ -1,3 +1,11 @@
+button:focus {
+  outline: solid 0.4vh #1db954;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 h2 {
   color: #fff;
   font-family: "CircularProBold";
@@ -27,7 +35,7 @@ h2 {
   height: calc(100vh - 6vw);
   width: 94vw;
   display: grid;
-  grid-template-columns: [first col1-start] 20% [col1-end col2-start] 38% [col2-end col3-start] 38% [col3-end end];
+  grid-template-columns: [first col1-start] 20% [col1-end col2-start] 78.5% [col2-end end];
   grid-template-rows: [first row1-start] 65% [row1-end row2-start] 33% [row2-end end];
   grid-column-gap: 1.5%;
   grid-row-gap: 2%;
@@ -37,28 +45,53 @@ h2 {
   grid-column-start: col1-start;
   grid-column-end: col1-end;
   grid-row-start: row1-start;
-  grid-row-end: row2-end;
-}
-
-.item-b {
-  grid-column-start: col2-start;
-  grid-column-end: col2-end;
-  grid-row-start: row1-start;
   grid-row-end: row1-end;
 }
 
+.item-b {
+  grid-column-start: col1-start;
+  grid-column-end: col1-end;
+  grid-row-start: row2-start;
+  grid-row-end: row2-end;
+  display: flex;
+}
+
 .item-c {
-  grid-column-start: col3-start;
-  grid-column-end: col-end;
+  grid-column-start: col2-start;
+  grid-column-end: col2-end;
   grid-row-start: row1-start;
   grid-row-end: row2-end;
 }
 
-.item-d {
-  grid-column-start: col2-start;
-  grid-column-end: col2-end;
-  grid-row-start: row2-start;
-  grid-row-end: row2-end;
+.nav-panel {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-items: center;
+}
+
+.ButtonPanel {
+  text-align: center;
+}
+
+.nav-button {
+  background-color: #b2b2b2;
+  text-transform: uppercase;
+  color: #000;
+  border-color: #b2b2b2;
+  letter-spacing: 0.3em;
+  font-family: "CircularProBold";
+  font-size: 1.2vh;
+  padding: 1.2vh 1.1vh 1.2vh 1.1vh;
+  margin-bottom: 0.4vh;
+  text-decoration: none;
+  width: 100%;
+}
+
+.nav-button:hover {
+  background-color: #1db954;
+  border-color: #000;
+  color: #fff;
 }
 
 .App-login {

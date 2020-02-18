@@ -5,9 +5,8 @@ import { getHashParams } from "../spotify";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import UserInfo from "./UserInfo/UserInfo";
-import RecentlyPlayed from "./RecentlyPlayed/RecentlyPlayed";
-import Playlists from "./Playlists/Playlists";
-import RecentGenres from "./RecentGenres/RecentGenres";
+import HomeDashboard from "./HomeDashboard/HomeDashboard";
+import TopTracksArtists from "./TopTracksArtists/TopTracksArtists";
 
 import { user } from "./mockData";
 
@@ -71,42 +70,51 @@ class App extends React.Component {
     return (
       <div className="App">
         <header className="App-header"></header>
+
         <div className="App-Container">
           {this.state.user ? (
-            <div id="homedash" className="homedash">
-              <div className="item-a">
-                <UserInfo
-                  key={this.state.user.display_name}
-                  id={this.state.user.display_name}
-                  user={this.state.user}
-                  access_token={access_token}
-                  getCurrentlyPlaying={this.getCurrentlyPlaying}
-                  currentlyPlaying={this.state.currentlyPlaying}
-                />
+            <Router>
+              <div id="homedash" className="homedash">
+                <div className="item-a">
+                  <UserInfo
+                    key={this.state.user.display_name}
+                    id={this.state.user.display_name}
+                    user={this.state.user}
+                    access_token={access_token}
+                    getCurrentlyPlaying={this.getCurrentlyPlaying}
+                    currentlyPlaying={this.state.currentlyPlaying}
+                  />
+                </div>
+
+                <div className="nav-panel item-b">
+                  <div className="ButtonPanel">
+                    <Link to="/" className="RouteLink">
+                      <button className="nav-button">Dashboard</button>
+                    </Link>
+                    <Link to="/toptracksartists" className="RouteLink">
+                      <button className="nav-button">
+                        Top Tracks + Artists
+                      </button>
+                    </Link>
+                    <Link to="/shows" className="RouteLink">
+                      <button className="nav-button">Find Shows</button>
+                    </Link>
+                  </div>
+                </div>
+
+                <Switch>
+                  <Route exact path="/" className="item-c">
+                    <HomeDashboard access_token={access_token} />
+                  </Route>
+                  <Route path="/toptracksartists">
+                    <h2>Top tracks + artists</h2>
+                  </Route>
+                  <Route path="/shows">
+                    <h2>find shows</h2>
+                  </Route>
+                </Switch>
               </div>
-              <div className="item-b">
-                <RecentlyPlayed
-                  key="recentlyplayed"
-                  id="recentlyplayed"
-                  access_token={access_token}
-                  getCurrentlyPlaying={this.getCurrentlyPlaying}
-                />
-              </div>
-              <div className="item-c">
-                <Playlists
-                  key="playlistsgrid"
-                  id="playlistsgrid"
-                  access_token={access_token}
-                />
-              </div>
-              <div className="item-d">
-                <RecentGenres
-                  key="recentgenreschart"
-                  id="recentgenreschart"
-                  access_token={access_token}
-                />
-              </div>
-            </div>
+            </Router>
           ) : (
             <div id="login" className="App-login">
               <h1>SpotChip</h1>

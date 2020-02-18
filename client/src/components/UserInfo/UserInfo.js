@@ -13,8 +13,8 @@ class UserInfo extends React.Component {
     super(props);
 
     this.state = {
-      //   currentlyPlaying: currentlyPlaying,
-      //   following: following
+      //currentlyPlaying: currentlyPlaying,
+      //following: following
       following: null
     };
   }
@@ -84,20 +84,6 @@ class UserInfo extends React.Component {
               <img src={playPause} className="playerImg" />
             </button>
           </div>
-        </div>
-
-        <div class="nav-panel UPItem">
-          <Router>
-            <Link to="/" className="RouteLink">
-              <button className="nav-button">Dashboard</button>
-            </Link>
-            <Link to="/toptracksartists" className="RouteLink">
-              <button className="nav-button">Top Artists + Tracks</button>
-            </Link>
-            <Link to="/shows" className="RouteLink">
-              <button className="nav-button">Find Shows</button>
-            </Link>
-          </Router>
         </div>
       </div>
     );

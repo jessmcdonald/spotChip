@@ -1,11 +1,3 @@
-button:focus {
-  outline: solid 0.4vh #1db954;
-}
-
-button:hover {
-  cursor: pointer;
-}
-
 .UserProfile {
   color: #fff;
   padding: 2vw 2vw 0vw 2vw;
@@ -68,32 +60,6 @@ button:hover {
 
 .followerCount {
   color: #1db954;
-}
-
-.RouteLink {
-  display: flex;
-  width: 100%;
-  text-decoration: none;
-}
-
-.nav-button {
-  background-color: #b2b2b2;
-  text-transform: uppercase;
-  color: #000;
-  border-color: #b2b2b2;
-  letter-spacing: 0.3em;
-  font-family: "CircularProBold";
-  font-size: 1.2vh;
-  padding: 1.2vh 1.1vh 1.2vh 1.1vh;
-  margin-bottom: 0.4vh;
-  text-decoration: none;
-  width: 100%;
-}
-
-.nav-button:hover {
-  background-color: #1db954;
-  border-color: #000;
-  color: #fff;
 }
 
 .currentlyPlaying {
@@ -184,13 +150,4 @@ button:hover {
   100% {
     opacity: 1;
   }
-}
-
-.nav-panel {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nav-panel .nav-button {
-  width: 100%;
 }

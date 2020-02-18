@@ -1,0 +1,30 @@
+.Dashboard {
+  height: calc(100vh - 6vw);
+  width: 100%;
+  display: grid;
+  grid-template-columns: [first col1-start] 48.5% [col1-end col2-start] 48.5% [col2-end end];
+  grid-template-rows: [first row1-start] 65% [row1-end row2-start] 33% [row2-end end];
+  grid-column-gap: 1.5%;
+  grid-row-gap: 2%;
+}
+
+.item-d {
+  grid-column-start: col1-start;
+  grid-column-end: col1-end;
+  grid-row-start: row1-start;
+  grid-row-end: row1-end;
+}
+
+.item-f {
+  grid-column-start: col1-start;
+  grid-column-end: col1-end;
+  grid-row-start: row2-start;
+  grid-row-end: row2-end;
+}
+
+.item-e {
+  grid-column-start: col2-start;
+  grid-column-end: col2-end;
+  grid-row-start: row1-start;
+  grid-row-end: row2-end;
+}
