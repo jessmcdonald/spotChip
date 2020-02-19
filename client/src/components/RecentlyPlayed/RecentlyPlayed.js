@@ -10,7 +10,8 @@ class RecentlyPlayed extends React.Component {
 
     this.state = {
       //recentlyPlayed: recentlyPlayed
-      recentlyPlayed: null
+      recentlyPlayed: null,
+      playingNow: null
     };
   }
 
@@ -50,7 +51,9 @@ class RecentlyPlayed extends React.Component {
       }
     })
       .then(function(response) {
-        console.log("changed");
+        this.setState({ playingNow: true }, () => {
+          this.props.getCurrentlyPlaying();
+        });
       })
       .catch(function(error) {
         console.log(error);
@@ -76,11 +79,7 @@ class RecentlyPlayed extends React.Component {
               <tr className="tr">
                 <td
                   className="tablenumber"
-                  onClick={() =>
-                    this.playTrack(item, () => {
-                      this.props.getCurrentlyPlaying();
-                    })
-                  }
+                  onClick={() => this.playTrack(item)}
                 >
                   {i + 1}
                 </td>
@@ -90,14 +89,7 @@ class RecentlyPlayed extends React.Component {
                     src={item.track.album.images[0].url}
                   />
                 </td>
-                <td
-                  className="trackName"
-                  onClick={() =>
-                    this.playTrack(item, () => {
-                      this.props.getCurrentlyPlaying();
-                    })
-                  }
-                >
+                <td className="trackName" onClick={() => this.playTrack(item)}>
                   {item.track.name}
                 </td>
                 <td>{item.track.artists[0].name}</td>
