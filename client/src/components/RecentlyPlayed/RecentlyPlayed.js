@@ -35,7 +35,7 @@ class RecentlyPlayed extends React.Component {
       });
   };
 
-  playTrack = (item, getCurrentlyPlaying) => {
+  playTrack = item => {
     let access_token = this.props.access_token;
     const url = "https://api.spotify.com/v1/me/player/play";
     console.log(access_token);
@@ -50,7 +50,7 @@ class RecentlyPlayed extends React.Component {
       }
     })
       .then(function(response) {
-        getCurrentlyPlaying();
+        console.log("changed");
       })
       .catch(function(error) {
         console.log(error);
@@ -77,7 +77,9 @@ class RecentlyPlayed extends React.Component {
                 <td
                   className="tablenumber"
                   onClick={() =>
-                    this.playTrack(item, this.props.getCurrentlyPlaying)
+                    this.playTrack(item, () => {
+                      this.props.getCurrentlyPlaying();
+                    })
                   }
                 >
                   {i + 1}
