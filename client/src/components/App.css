@@ -68,10 +68,7 @@ h2 {
   flex-wrap: wrap;
   align-items: center;
   justify-items: center;
-}
-
-.ButtonPanel {
-  text-align: center;
+  justify-content: center;
 }
 
 .nav-button {
@@ -85,7 +82,7 @@ h2 {
   padding: 1.2vh 1.1vh 1.2vh 1.1vh;
   margin-bottom: 0.4vh;
   text-decoration: none;
-  width: 100%;
+  width: 12vw;
 }
 
 .nav-button:hover {

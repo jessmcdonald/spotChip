@@ -89,7 +89,7 @@ class App extends React.Component {
 
                 <div className="nav-panel item-b">
                   <div className="ButtonPanel">
-                    <Link to="/" className="RouteLink">
+                    <Link to="/" className="RouteLink ">
                       <button className="nav-button">Dashboard</button>
                     </Link>
                     <Link to="/toptracksartists" className="RouteLink">

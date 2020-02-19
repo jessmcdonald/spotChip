@@ -41,3 +41,29 @@
   letter-spacing: 0.2em;
   margin-top: 0vh;
 }
+
+.timeFrameButtons {
+  display: flex;
+  padding-bottom: 2vh;
+  margin-top: -2vh;
+}
+
+.timeFrameButton {
+  flex: 30%;
+  background-color: #b2b2b2;
+  text-transform: uppercase;
+  color: #000;
+  border-color: #b2b2b2;
+  letter-spacing: 0.3em;
+  font-family: "CircularProBold";
+  font-size: 1.2vh;
+  padding: 1.2vh 1.1vh 1.2vh 1.1vh;
+  margin: 0.4vh;
+  text-decoration: none;
+}
+
+.timeFrameButton:hover {
+  background-color: #1db954;
+  border-color: #000;
+  color: #fff;
+}

@@ -39,7 +39,9 @@ class TopTracksArtists extends React.Component {
       });
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    this.getTopArtists();
+  }
 
   render() {
     return (
@@ -50,29 +52,41 @@ class TopTracksArtists extends React.Component {
         <div className="TopArtists item-y">
           <h2>Top Artists</h2>
           <div className="ArtistsSection">
-            <div>
-              <button id="short_term" onClick={e => this.setTimeRange(e)}>
+            <div className="timeFrameButtons">
+              <button
+                className="timeFrameButton"
+                id="short_term"
+                onClick={e => this.setTimeRange(e)}
+              >
                 last month
               </button>
-              <button id="medium_term" onClick={e => this.setTimeRange(e)}>
+              <button
+                className="timeFrameButton"
+                id="medium_term"
+                onClick={e => this.setTimeRange(e)}
+              >
                 last 6 months
               </button>
-              <button id="long_term" onClick={e => this.setTimeRange(e)}>
+              <button
+                className="timeFrameButton"
+                id="long_term"
+                onClick={e => this.setTimeRange(e)}
+              >
                 ever
               </button>
-              {this.state.topArtists ? (
-                <div className="artistsGrid">
-                  {this.state.topArtists.items.map(item => (
-                    <div className="artistBox">
-                      <img className="artistImg" src={item.images[0].url} />
-                      <p className="artistName">{item.name}</p>
-                    </div>
-                  ))}
-                </div>
-              ) : (
-                <div>oh no no top artists</div>
-              )}
             </div>
+            {this.state.topArtists ? (
+              <div className="artistsGrid">
+                {this.state.topArtists.items.map(item => (
+                  <div className="artistBox">
+                    <img className="artistImg" src={item.images[0].url} />
+                    <p className="artistName">{item.name}</p>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div>oh no no top artists</div>
+            )}
           </div>
         </div>
       </div>
