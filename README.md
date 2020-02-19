@@ -1,6 +1,6 @@
 # showspotter
 
-Spotify App to view profile info, listening stats &amp; discover artists playing gigs in your area
+Spotify App to view profile info, see listening stats, play tracks &amp; discover artists playing gigs in your area
 
 Builts using:
 
@@ -9,4 +9,4 @@ Builts using:
 - ReCharts
 - React-router-dom
 
-<img src="https://i.imgur.com/D2x0mJH.jpg" width=800>
+<img src="https://i.imgur.com/ECG9Qcu.jpg" width=800>
