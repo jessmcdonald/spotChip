@@ -111,7 +111,7 @@ class App extends React.Component {
                     />
                   </Route>
                   <Route path="/toptracksartists" className="item-c">
-                    <TopTracksArtists />
+                    <TopTracksArtists access_token={access_token} />
                   </Route>
                   <Route path="/shows">
                     <FindShows />
