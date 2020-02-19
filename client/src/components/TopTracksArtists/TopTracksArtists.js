@@ -13,8 +13,9 @@ class TopTracksArtists extends React.Component {
     };
   }
 
-  setTimeRange = e => {
+  setTimeRange = (e, getTopArtists) => {
     this.setState({ timeRange: e.target.id });
+    getTopArtists();
   };
 
   getTopArtists = () => {
@@ -45,13 +46,22 @@ class TopTracksArtists extends React.Component {
           <h2>Top Artists</h2>
           <div className="ArtistsGrid">
             <div>
-              <button id="short_term" onClick={e => this.setTimeRange(e)}>
+              <button
+                id="short_term"
+                onClick={e => this.setTimeRange(e, this.getTopArtists)}
+              >
                 last month
               </button>
-              <button id="medium_term" onClick={e => this.setTimeRange(e)}>
+              <button
+                id="medium_term"
+                onClick={e => this.setTimeRange(e, this.getTopArtists)}
+              >
                 last 6 months
               </button>
-              <button id="long_term" onClick={e => this.setTimeRange(e)}>
+              <button
+                id="long_term"
+                onClick={e => this.setTimeRange(e, this.getTopArtists)}
+              >
                 ever
               </button>
             </div>
