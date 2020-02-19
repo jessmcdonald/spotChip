@@ -3,6 +3,8 @@ import axios from "axios";
 
 import "./TopTracksArtists.css";
 
+import { topArtistsLimited } from "../mockData";
+
 class TopTracksArtists extends React.Component {
   constructor(props) {
     super(props);
@@ -10,6 +12,7 @@ class TopTracksArtists extends React.Component {
     this.state = {
       timeRange: "short_term",
       topArtists: null
+      //topArtists: topArtistsLimited
     };
   }
 
@@ -25,7 +28,7 @@ class TopTracksArtists extends React.Component {
     axios
       .get("https://api.spotify.com/v1/me/top/artists", {
         headers: { Authorization: `Bearer ${access_token}` },
-        params: { limit: 50, time_range: this.state.timeRange }
+        params: { limit: 16, time_range: this.state.timeRange }
       })
       .then(response => {
         this.setState({ topArtists: response.data });
@@ -41,12 +44,12 @@ class TopTracksArtists extends React.Component {
   render() {
     return (
       <div className="TopTracksArtists">
-        <div className="TopTracks">
+        <div className="TopTracks item-x">
           <h2>Top Tracks</h2>
         </div>
-        <div>
+        <div className="TopArtists item-y">
           <h2>Top Artists</h2>
-          <div className="ArtistsGrid">
+          <div className="ArtistsSection">
             <div>
               <button id="short_term" onClick={e => this.setTimeRange(e)}>
                 last month
@@ -57,6 +60,18 @@ class TopTracksArtists extends React.Component {
               <button id="long_term" onClick={e => this.setTimeRange(e)}>
                 ever
               </button>
+              {this.state.topArtists ? (
+                <div className="artistsGrid">
+                  {this.state.topArtists.items.map(item => (
+                    <div className="artistBox">
+                      <img className="artistImg" src={item.images[0].url} />
+                      <p className="artistName">{item.name}</p>
+                    </div>
+                  ))}
+                </div>
+              ) : (
+                <div>oh no no top artists</div>
+              )}
             </div>
           </div>
         </div>

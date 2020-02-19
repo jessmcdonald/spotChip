@@ -6048,6 +6048,697 @@ export const topArtists = {
   next: null
 };
 
+export const topArtistsLimited = {
+  items: [
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/3pTE9iaJTkWns3mxpNQlJV"
+      },
+      followers: {
+        href: null,
+        total: 684117
+      },
+      genres: [
+        "alternative dance",
+        "british indie rock",
+        "chamber pop",
+        "indie pop",
+        "indie rock",
+        "indietronica",
+        "modern rock",
+        "new rave",
+        "rock"
+      ],
+      href: "https://api.spotify.com/v1/artists/3pTE9iaJTkWns3mxpNQlJV",
+      id: "3pTE9iaJTkWns3mxpNQlJV",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/27d64971695c2d0535197e65d47b5fbcd6b610a8",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/8a05066e13110227cef58f0a93676c38663d5eec",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/f38eea368d28a7e0d7e9128a059c6e85dde31979",
+          width: 160
+        }
+      ],
+      name: "Bombay Bicycle Club",
+      popularity: 72,
+      type: "artist",
+      uri: "spotify:artist:3pTE9iaJTkWns3mxpNQlJV"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/5o206eFLx38glA2bb4zqIU"
+      },
+      followers: {
+        href: null,
+        total: 406253
+      },
+      genres: [
+        "anti-folk",
+        "indie folk",
+        "indie pop",
+        "indie rock",
+        "melancholia",
+        "omaha indie",
+        "slow core",
+        "stomp and holler"
+      ],
+      href: "https://api.spotify.com/v1/artists/5o206eFLx38glA2bb4zqIU",
+      id: "5o206eFLx38glA2bb4zqIU",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/ba12e58628ac77c245c152abca3c1433405eddc6",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/9e9c00a6d61a1c0bab336284dcbec4bb959bf135",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/a171176ab7482f282da791f2e8623aa38118cbe5",
+          width: 160
+        }
+      ],
+      name: "Bright Eyes",
+      popularity: 65,
+      type: "artist",
+      uri: "spotify:artist:5o206eFLx38glA2bb4zqIU"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/6lcwlkAjBPSKnFBZjjZFJs"
+      },
+      followers: {
+        href: null,
+        total: 106349
+      },
+      genres: [
+        "alternative rock",
+        "art pop",
+        "chamber pop",
+        "experimental pop",
+        "freak folk",
+        "garage psych",
+        "indie folk",
+        "indie garage rock",
+        "indie pop",
+        "indie rock",
+        "lo-fi",
+        "noise pop",
+        "philly indie"
+      ],
+      href: "https://api.spotify.com/v1/artists/6lcwlkAjBPSKnFBZjjZFJs",
+      id: "6lcwlkAjBPSKnFBZjjZFJs",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/82e1658be6688ee69d8d1c2bb9be33670e5e1a6d",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/1770d75e30b61af34ceab8ce2041bf565c236ed1",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/5409a7d83c3386ec0b6372ad1d776dd6fba0784b",
+          width: 160
+        }
+      ],
+      name: "(Sandy) Alex G",
+      popularity: 62,
+      type: "artist",
+      uri: "spotify:artist:6lcwlkAjBPSKnFBZjjZFJs"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/4MXUO7sVCaFgFjoTI5ox5c"
+      },
+      followers: {
+        href: null,
+        total: 990868
+      },
+      genres: [
+        "baroque pop",
+        "chamber pop",
+        "freak folk",
+        "indie folk",
+        "singer-songwriter"
+      ],
+      href: "https://api.spotify.com/v1/artists/4MXUO7sVCaFgFjoTI5ox5c",
+      id: "4MXUO7sVCaFgFjoTI5ox5c",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/02eb6f9f862cf905be646bcbfa52fc0ecc994410",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/646782ba6f7a5a98694852c70e705fe9d8bc9804",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/938ee98d17da1a4f8c7943c83af3d6b6e9288ff9",
+          width: 160
+        }
+      ],
+      name: "Sufjan Stevens",
+      popularity: 76,
+      type: "artist",
+      uri: "spotify:artist:4MXUO7sVCaFgFjoTI5ox5c"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/6FlOCziOXI157pvUREAh3E"
+      },
+      followers: {
+        href: null,
+        total: 73797
+      },
+      genres: [
+        "dance-punk",
+        "indie pop",
+        "indie rock",
+        "new rave",
+        "twee pop",
+        "welsh indie",
+        "welsh rock"
+      ],
+      href: "https://api.spotify.com/v1/artists/6FlOCziOXI157pvUREAh3E",
+      id: "6FlOCziOXI157pvUREAh3E",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/ccf63a680927c3d41ce76402802fb9ea78510093",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/e1d90786879d7e0b362767e8ce5d3af549a5634b",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/5cad71fef0e374bb670d69cc6b4b71606cd97811",
+          width: 160
+        }
+      ],
+      name: "Los Campesinos!",
+      popularity: 49,
+      type: "artist",
+      uri: "spotify:artist:6FlOCziOXI157pvUREAh3E"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/0oSGxfWSnnOXhD2fKuz2Gy"
+      },
+      followers: {
+        href: null,
+        total: 5103498
+      },
+      genres: [
+        "album rock",
+        "art rock",
+        "classic rock",
+        "dance rock",
+        "glam rock",
+        "permanent wave",
+        "protopunk",
+        "rock"
+      ],
+      href: "https://api.spotify.com/v1/artists/0oSGxfWSnnOXhD2fKuz2Gy",
+      id: "0oSGxfWSnnOXhD2fKuz2Gy",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/f099fa7e53e03cf2746c659e534eb7d952c9bd6a",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/ca4614bc379c46cf486f98f8812d70db87c71b4f",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/30eb99590bd150728b1287f103d61c9dc5375189",
+          width: 160
+        }
+      ],
+      name: "David Bowie",
+      popularity: 84,
+      type: "artist",
+      uri: "spotify:artist:0oSGxfWSnnOXhD2fKuz2Gy"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/4wLIbcoqmqI4WZHDiBxeCB"
+      },
+      followers: {
+        href: null,
+        total: 154882
+      },
+      genres: [
+        "alternative pop",
+        "alternative rock",
+        "anti-folk",
+        "art pop",
+        "indie pop",
+        "indie punk",
+        "indie rock",
+        "lilith",
+        "lo-fi",
+        "noise pop",
+        "olympia wa indie",
+        "riot grrrl"
+      ],
+      href: "https://api.spotify.com/v1/artists/4wLIbcoqmqI4WZHDiBxeCB",
+      id: "4wLIbcoqmqI4WZHDiBxeCB",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/b3461c10aecd283de918b5f929d35b19235b59e9",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/3f86244db56e1f1323fef7b67416c38d02366afe",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/e30a7379bf2a7d135c50880150973c09f3b4f84d",
+          width: 160
+        }
+      ],
+      name: "Sleater-Kinney",
+      popularity: 53,
+      type: "artist",
+      uri: "spotify:artist:4wLIbcoqmqI4WZHDiBxeCB"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/54QMjE4toDfiCryzYWCpXX"
+      },
+      followers: {
+        href: null,
+        total: 677115
+      },
+      genres: [
+        "alternative dance",
+        "dance-punk",
+        "electronica",
+        "electropop",
+        "indie pop",
+        "indie rock",
+        "indietronica",
+        "modern rock",
+        "new rave",
+        "socal pop punk"
+      ],
+      href: "https://api.spotify.com/v1/artists/54QMjE4toDfiCryzYWCpXX",
+      id: "54QMjE4toDfiCryzYWCpXX",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/34a0ea66fdc8653b35b8fb7f67c57f9d778ed094",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/0cd7a08db37aacd4c787f4fb8edd4d9d898de913",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/1badfd9fdb8bd4f095e16f11d13d02859e20fbad",
+          width: 160
+        }
+      ],
+      name: "Metronomy",
+      popularity: 69,
+      type: "artist",
+      uri: "spotify:artist:54QMjE4toDfiCryzYWCpXX"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/4kIwETcbpuFgRukE8o7Opx"
+      },
+      followers: {
+        href: null,
+        total: 34444
+      },
+      genres: [
+        "alternative r&b",
+        "indie r&b",
+        "indie soul",
+        "uk contemporary r&b"
+      ],
+      href: "https://api.spotify.com/v1/artists/4kIwETcbpuFgRukE8o7Opx",
+      id: "4kIwETcbpuFgRukE8o7Opx",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/32bad082df3bb6cfb0eadb4f5cb906b785e4d2f2",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/7acc0f4824fdf899ce7a10a8420d03ae6f9b93b1",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/de7969d302c6a7adb3a52d63b759652ad7f69b54",
+          width: 160
+        }
+      ],
+      name: "Arlo Parks",
+      popularity: 62,
+      type: "artist",
+      uri: "spotify:artist:4kIwETcbpuFgRukE8o7Opx"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/4aEnNH9PuU1HF3TsZTru54"
+      },
+      followers: {
+        href: null,
+        total: 429440
+      },
+      genres: [
+        "alternative dance",
+        "art pop",
+        "chillwave",
+        "dance-punk",
+        "electronica",
+        "electropop",
+        "folktronica",
+        "indie rock",
+        "indie soul",
+        "indietronica",
+        "intelligent dance music",
+        "new rave"
+      ],
+      href: "https://api.spotify.com/v1/artists/4aEnNH9PuU1HF3TsZTru54",
+      id: "4aEnNH9PuU1HF3TsZTru54",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/1a2fc54c4edb1b614458d213c4f9b8b280f091cd",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/a0ccbf89bb9accbeace5c08044606cac288bbbb7",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/df0a17ba43b15b79b35bac1bda7e632371060afe",
+          width: 160
+        }
+      ],
+      name: "Caribou",
+      popularity: 68,
+      type: "artist",
+      uri: "spotify:artist:4aEnNH9PuU1HF3TsZTru54"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/4CvTDPKA6W06DRfBnZKrau"
+      },
+      followers: {
+        href: null,
+        total: 508787
+      },
+      genres: [
+        "art pop",
+        "chamber pop",
+        "electronica",
+        "indie rock",
+        "oxford indie"
+      ],
+      href: "https://api.spotify.com/v1/artists/4CvTDPKA6W06DRfBnZKrau",
+      id: "4CvTDPKA6W06DRfBnZKrau",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/b4f83f1c59467d4e7f3abb7a115222d71c4d884c",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/df9c1e00bd8cbab3c34af5ac8b2964c6a4f821c5",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/8f6ec788c2c69105ae06732ff2e2611b4810b698",
+          width: 160
+        }
+      ],
+      name: "Thom Yorke",
+      popularity: 65,
+      type: "artist",
+      uri: "spotify:artist:4CvTDPKA6W06DRfBnZKrau"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/3U6rNiL0weudbwLofMicVq"
+      },
+      followers: {
+        href: null,
+        total: 4111
+      },
+      genres: ["chillhop", "lo-fi beats"],
+      href: "https://api.spotify.com/v1/artists/3U6rNiL0weudbwLofMicVq",
+      id: "3U6rNiL0weudbwLofMicVq",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/4b4d881210e04c7bfeb57e956cf011a97f53a674",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/7ac88bceccc231b0dbcc5c0644f44b457f2432f3",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/321d939656516b880c035391b46cb68ee88c3f50",
+          width: 160
+        }
+      ],
+      name: "Brenky",
+      popularity: 68,
+      type: "artist",
+      uri: "spotify:artist:3U6rNiL0weudbwLofMicVq"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/4UXqAaa6dQYAk18Lv7PEgX"
+      },
+      followers: {
+        href: null,
+        total: 7660402
+      },
+      genres: ["emo", "modern rock", "pop punk"],
+      href: "https://api.spotify.com/v1/artists/4UXqAaa6dQYAk18Lv7PEgX",
+      id: "4UXqAaa6dQYAk18Lv7PEgX",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/078a111caaad88290dfa51d1aebf76f305f63dbf",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/abf638dd7e70c34518f4c2972c8d3c934456713d",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/194afe6aa362b3b1c3ea51744776d96e800be9c9",
+          width: 160
+        }
+      ],
+      name: "Fall Out Boy",
+      popularity: 85,
+      type: "artist",
+      uri: "spotify:artist:4UXqAaa6dQYAk18Lv7PEgX"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/6TeBxtluBMQixZcKkJ3ZrB"
+      },
+      followers: {
+        href: null,
+        total: 12698
+      },
+      genres: ["lo-fi beats"],
+      href: "https://api.spotify.com/v1/artists/6TeBxtluBMQixZcKkJ3ZrB",
+      id: "6TeBxtluBMQixZcKkJ3ZrB",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/5af650f95d5c94d8618e027aea49becc14dba41b",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/62f3978b48b4dc6fc19ab167676d6e5e113f3c95",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/7b44e1dbf1dc3e653953805ff78fc8c7847d9af8",
+          width: 160
+        }
+      ],
+      name: "HM Surf",
+      popularity: 67,
+      type: "artist",
+      uri: "spotify:artist:6TeBxtluBMQixZcKkJ3ZrB"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/7oPftvlwr6VrsViSDV7fJY"
+      },
+      followers: {
+        href: null,
+        total: 10248867
+      },
+      genres: ["modern rock", "permanent wave", "punk"],
+      href: "https://api.spotify.com/v1/artists/7oPftvlwr6VrsViSDV7fJY",
+      id: "7oPftvlwr6VrsViSDV7fJY",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/41778f8778469286e6aa9ef751cdc8e942bc0a6f",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/8e7cb070f12ae05f76711cf95487752a3f685465",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/50579fcc433000fb41217742a5072240d9e93bf9",
+          width: 160
+        }
+      ],
+      name: "Green Day",
+      popularity: 86,
+      type: "artist",
+      uri: "spotify:artist:7oPftvlwr6VrsViSDV7fJY"
+    },
+    {
+      external_urls: {
+        spotify: "https://open.spotify.com/artist/2pLu3Ut2C3RviYZ3xUanBs"
+      },
+      followers: {
+        href: null,
+        total: 2143
+      },
+      genres: ["lo-fi beats"],
+      href: "https://api.spotify.com/v1/artists/2pLu3Ut2C3RviYZ3xUanBs",
+      id: "2pLu3Ut2C3RviYZ3xUanBs",
+      images: [
+        {
+          height: 640,
+          url:
+            "https://i.scdn.co/image/18e013a1807710fc1c58a00d6ad9b056467a96ab",
+          width: 640
+        },
+        {
+          height: 320,
+          url:
+            "https://i.scdn.co/image/804c6e5cb2d21f2e7a635d4ba33e0ee43384b621",
+          width: 320
+        },
+        {
+          height: 160,
+          url:
+            "https://i.scdn.co/image/6553ffe1a1bab96ca75e6e97152d5315f21e5896",
+          width: 160
+        }
+      ],
+      name: "Flovry",
+      popularity: 67,
+      type: "artist",
+      uri: "spotify:artist:2pLu3Ut2C3RviYZ3xUanBs"
+    }
+  ],
+  total: 50,
+  limit: 16,
+  offset: 0,
+  href: "https://api.spotify.com/v1/me/top/artists?limit=16&offset=0",
+  previous: null,
+  next: "https://api.spotify.com/v1/me/top/artists?limit=16&offset=16"
+};
+
 export const genreArray = [
   { name: "indie rock", size: 19 },
   { name: "indie pop", size: 16 },
