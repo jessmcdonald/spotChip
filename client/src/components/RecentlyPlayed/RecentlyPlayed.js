@@ -39,7 +39,7 @@ class RecentlyPlayed extends React.Component {
     let access_token = this.props.access_token;
     const url = "https://api.spotify.com/v1/me/player/play";
     console.log(access_token);
-    axios({
+    await axios({
       method: "PUT",
       url: url,
       data: { uris: [item.track.uri] },
