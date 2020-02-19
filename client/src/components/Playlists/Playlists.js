@@ -37,11 +37,13 @@ class Playlists extends React.Component {
     return (
       <div className="playlists">
         {this.state.playlists ? (
-          <div className="playlistGrid">
+          <div className="playlistSection">
             <h2>Playlists</h2>
-            {this.state.playlists.items.map(item => (
-              <img src={item.images[0].url} className="playlistCoverImg" />
-            ))}
+            <div className="playlistGrid">
+              {this.state.playlists.items.map(item => (
+                <img src={item.images[0].url} className="playlistCoverImg" />
+              ))}
+            </div>
           </div>
         ) : (
           <div></div>
