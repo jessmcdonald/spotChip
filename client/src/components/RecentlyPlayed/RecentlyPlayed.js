@@ -39,7 +39,7 @@ class RecentlyPlayed extends React.Component {
     let access_token = this.props.access_token;
     const url = "https://api.spotify.com/v1/me/player/play";
     console.log(access_token);
-    await axios({
+    axios({
       method: "PUT",
       url: url,
       data: { uris: [item.track.uri] },
@@ -55,7 +55,6 @@ class RecentlyPlayed extends React.Component {
       .catch(function(error) {
         console.log(error);
       });
-    getCurrentlyPlaying();
   };
 
   render() {
@@ -92,7 +91,9 @@ class RecentlyPlayed extends React.Component {
                 <td
                   className="trackName"
                   onClick={() =>
-                    this.playTrack(item, this.props.getCurrentlyPlaying)
+                    this.playTrack(item, () => {
+                      this.props.getCurrentlyPlaying();
+                    })
                   }
                 >
                   {item.track.name}
