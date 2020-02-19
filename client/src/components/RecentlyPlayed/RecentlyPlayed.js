@@ -55,6 +55,7 @@ class RecentlyPlayed extends React.Component {
       .catch(function(error) {
         console.log(error);
       });
+    getCurrentlyPlaying();
   };
 
   render() {
