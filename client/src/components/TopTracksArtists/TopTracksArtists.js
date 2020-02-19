@@ -13,10 +13,9 @@ class TopTracksArtists extends React.Component {
     };
   }
 
-  setTimeRange = (e, callback) => {
-    this.setState({ timeRange: e.target.id });
-    callback();
-  };
+  setTimeRange(e, callback) {
+    this.setState({ timeRange: e.target.id }).then(callback);
+  }
 
   getTopArtists = () => {
     let access_token = this.props.access_token;
