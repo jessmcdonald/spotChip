@@ -13,9 +13,12 @@ class TopTracksArtists extends React.Component {
     };
   }
 
-  setTimeRange(e, callback) {
-    this.setState({ timeRange: e.target.id }).then(callback);
-  }
+  setTimeRange = e => {
+    this.setState({ timeRange: e.target.id }, () => {
+      this.getTopArtists();
+      console.log(this.state.timeRange);
+    });
+  };
 
   getTopArtists = () => {
     let access_token = this.props.access_token;
@@ -45,22 +48,13 @@ class TopTracksArtists extends React.Component {
           <h2>Top Artists</h2>
           <div className="ArtistsGrid">
             <div>
-              <button
-                id="short_term"
-                onClick={e => this.setTimeRange(e, this.getTopArtists)}
-              >
+              <button id="short_term" onClick={e => this.setTimeRange(e)}>
                 last month
               </button>
-              <button
-                id="medium_term"
-                onClick={e => this.setTimeRange(e, this.getTopArtists)}
-              >
+              <button id="medium_term" onClick={e => this.setTimeRange(e)}>
                 last 6 months
               </button>
-              <button
-                id="long_term"
-                onClick={e => this.setTimeRange(e, this.getTopArtists)}
-              >
+              <button id="long_term" onClick={e => this.setTimeRange(e)}>
                 ever
               </button>
             </div>
