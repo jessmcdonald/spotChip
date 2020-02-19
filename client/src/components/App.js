@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import UserInfo from "./UserInfo/UserInfo";
 import HomeDashboard from "./HomeDashboard/HomeDashboard";
 import TopTracksArtists from "./TopTracksArtists/TopTracksArtists";
+import FindShows from "./FindShows/FindShows";
 
 import { user } from "./mockData";
 
@@ -109,11 +110,11 @@ class App extends React.Component {
                       getCurrentlyPlaying={this.getCurrentlyPlaying}
                     />
                   </Route>
-                  <Route path="/toptracksartists">
-                    <h2>Top tracks + artists</h2>
+                  <Route path="/toptracksartists" className="item-c">
+                    <TopTracksArtists />
                   </Route>
                   <Route path="/shows">
-                    <h2>find shows</h2>
+                    <FindShows />
                   </Route>
                 </Switch>
               </div>

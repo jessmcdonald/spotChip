@@ -1,0 +1,6 @@
+.TopTracksArtists {
+  display: grid;
+  grid-template-columns: [first col1-start] 49% [col1-end col2-start] 49% [col2-end end];
+  grid-template-rows: [first row1-start] 100% [row1-end end];
+  grid-column-gap: 2%;
+}

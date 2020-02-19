@@ -1,23 +1,62 @@
 import React from "react";
-import "./TopTracksArtists.css";
 import axios from "axios";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
-import RecentlyPlayed from "../RecentlyPlayed/RecentlyPlayed";
-import Playlists from "../Playlists/Playlists";
-import RecentGenres from "../RecentGenres/RecentGenres";
+import "./TopTracksArtists.css";
 
 class TopTracksArtists extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = {
+      timeRange: "short_term",
+      topArtists: null
+    };
   }
+
+  setTimeRange = e => {
+    this.setState({ timeRange: e.target.id });
+  };
+
+  getTopArtists = () => {
+    let access_token = this.props.access_token;
+    axios
+      .get("https://api.spotify.com/v1/me/top/artists", {
+        headers: { Authorization: `Bearer ${access_token}` },
+        params: { limit: 50, time_range: this.state.timeRange }
+      })
+      .then(response => {
+        this.setState({ topArtists: response.data });
+        console.log(this.state.topArtists);
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+  };
+
+  componentDidMount() {}
 
   render() {
     return (
-      <div>
-        <h2>find shows</h2>
+      <div className="TopTracksArtists">
+        <div className="TopTracks">
+          <h2>Top Tracks</h2>
+        </div>
+        <div>
+          <h2>Top Artists</h2>
+          <div className="ArtistsGrid">
+            <div>
+              <button id="short_term" onClick={e => this.setTimeRange(e)}>
+                last month
+              </button>
+              <button id="medium_term" onClick={e => this.setTimeRange(e)}>
+                last 6 months
+              </button>
+              <button id="long_term" onClick={e => this.setTimeRange(e)}>
+                ever
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
