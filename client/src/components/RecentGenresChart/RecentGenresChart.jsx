@@ -72,7 +72,7 @@ class CustomizedContent extends PureComponent {
             stroke="none"
             fill="#191414"
             width={80}
-            style={{ wordBreak: "break-all" }}
+            style={{ wordWrap: "break-word" }}
           >
             {name}
           </Text>
