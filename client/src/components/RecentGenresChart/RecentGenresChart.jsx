@@ -71,7 +71,8 @@ class CustomizedContent extends PureComponent {
             className="chartText"
             stroke="none"
             fill="#191414"
-            width={100}
+            width={80}
+            style={{ wordBreak: "break-all" }}
           >
             {name}
           </Text>

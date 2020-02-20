@@ -10,7 +10,7 @@
 .playlistGrid {
   height: 75vh;
   display: grid;
-  grid-template-columns: [first col1-start] 23% [col1-end col2-start] 24% [col2-end col3-start] 24% [col3-end col4-start] 24% [col4-end end];
+  grid-template-columns: [first col1-start] 24% [col1-end col2-start] 24% [col2-end col3-start] 24% [col3-end col4-start] 24% [col4-end end];
   grid-template-rows: [first row1-start] 20% [row1-end row2-start] 20% [row2-end row3-start] 20% [row3-end row4-start] 20% [row4-end row5-start] 20% [row5-end end];
   grid-column-gap: 1%;
   grid-row-gap: 2%;
