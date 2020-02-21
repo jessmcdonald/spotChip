@@ -124,7 +124,6 @@ class App extends React.Component {
                     <ArtistInfo
                       access_token={access_token}
                       getCurrentlyPlaying={this.getCurrentlyPlaying}
-                      artist={item}
                     />
                   </Route>
                 </Switch>
