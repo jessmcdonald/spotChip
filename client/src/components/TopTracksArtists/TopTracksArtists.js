@@ -12,10 +12,10 @@ class TopTracksArtists extends React.Component {
     this.state = {
       timeRange: "short_term",
       timeRangeTracks: "short_term",
-      //topArtists: null,
-      //topTracks: null,
-      topArtists: topArtistsLimited,
-      topTracks: recentlyPlayed
+      topArtists: null,
+      topTracks: null
+      //topArtists: topArtistsLimited,
+      //topTracks: recentlyPlayed
     };
   }
 
