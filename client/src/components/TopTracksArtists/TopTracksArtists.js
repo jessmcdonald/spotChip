@@ -77,7 +77,7 @@ class TopTracksArtists extends React.Component {
     axios({
       method: "PUT",
       url: url,
-      data: { uris: [item.track.uri] },
+      data: { uris: [item.uri] },
       headers: {
         Authorization: `Bearer ${access_token}`,
         Accept: "application/json",
