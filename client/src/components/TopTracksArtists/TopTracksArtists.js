@@ -145,7 +145,7 @@ class TopTracksArtists extends React.Component {
                     <td>
                       <img
                         className="playlistImg"
-                        src={item.track.album.images[0].url}
+                        src={item.album.images[0].url}
                       />
                     </td>
                     <td
@@ -154,9 +154,9 @@ class TopTracksArtists extends React.Component {
                         this.playTrack(item, this.props.getCurrentlyPlaying)
                       }
                     >
-                      {item.track.name}
+                      {item.name}
                     </td>
-                    <td>{item.track.artists[0].name}</td>
+                    <td>{item.artists[0].name}</td>
                   </tr>
                 ))}
               </table>
