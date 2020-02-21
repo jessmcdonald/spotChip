@@ -13,12 +13,14 @@ class ArtistInfo extends React.Component {
   //TODO
   //check if can get more detailed artist info with axios request
 
-  componentDidMount() {}
+  componentDidMount() {
+    console.log(this.props.artist);
+  }
 
   render() {
     return (
       <div className="ArtistProfile">
-        <h2>{this.props.name}</h2>
+        <h2>{this.props.artist.name}</h2>
         <img src="artistname" className="ArtistProfileImg" />
         <div className="ArtistFollowers">
           Followers: {this.props.followers.total}
