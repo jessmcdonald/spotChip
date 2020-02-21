@@ -59,7 +59,7 @@ class TopTracksArtists extends React.Component {
     axios
       .get("https://api.spotify.com/v1/me/top/tracks", {
         headers: { Authorization: `Bearer ${access_token}` },
-        params: { limit: 20, time_range: this.state.timeRangeTracks }
+        params: { limit: 15, time_range: this.state.timeRangeTracks }
       })
       .then(response => {
         this.setState({ topTracks: response.data });
