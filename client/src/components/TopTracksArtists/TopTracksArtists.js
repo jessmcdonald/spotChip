@@ -132,7 +132,7 @@ class TopTracksArtists extends React.Component {
                   <th width="35%">Artist</th>
                 </tr>
 
-                {this.state.topTracks.map((item, i) => (
+                {this.state.topTracks.items.map((item, i) => (
                   <tr className="tr">
                     <td
                       className="tablenumber"
