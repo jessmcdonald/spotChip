@@ -14,7 +14,7 @@ class FindShows extends React.Component {
 
   render() {
     return (
-      <div className="FinsShows">
+      <div className="FindShows">
         <h2>Find Shows</h2>
       </div>
     );

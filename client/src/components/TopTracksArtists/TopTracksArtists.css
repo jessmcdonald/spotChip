@@ -1,4 +1,5 @@
 .TopTracksArtists {
+  color: #fff;
   display: grid;
   grid-template-columns: [first col1-start] 49% [col1-end col2-start] 49% [col2-end end];
   grid-template-rows: [first row1-start] 100% [row1-end end];
@@ -34,12 +35,27 @@
   border-radius: 50%;
 }
 
+.artistImg:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
 .artistName {
   color: #fff;
   font-weight: 400;
   font-size: 0.75vw;
   letter-spacing: 0.2em;
   margin-top: 0vh;
+}
+
+.artistName:hover {
+  opacity: 75%;
+  cursor: pointer;
+}
+
+.topTracksTable {
+  font-family: "CircularProMedium";
+  font-size: 1.5vh;
 }
 
 .timeFrameButtons {
