@@ -120,11 +120,11 @@ class App extends React.Component {
                   <Route path="/shows">
                     <FindShows />
                   </Route>
-                  <Route exact path="/{artist_name}" className="item-c">
+                  <Route path="artists/:artistname" className="item-c">
                     <ArtistInfo
                       access_token={access_token}
                       getCurrentlyPlaying={this.getCurrentlyPlaying}
-                      artist={this.state.artist}
+                      artist={item}
                     />
                   </Route>
                 </Switch>

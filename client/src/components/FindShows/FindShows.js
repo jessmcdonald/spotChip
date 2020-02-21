@@ -16,6 +16,7 @@ class FindShows extends React.Component {
     return (
       <div className="FindShows">
         <h2>Find Shows</h2>
+        <h3>Coming Soon!</h3>
       </div>
     );
   }

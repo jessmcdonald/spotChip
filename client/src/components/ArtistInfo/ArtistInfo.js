@@ -18,10 +18,10 @@ class ArtistInfo extends React.Component {
   render() {
     return (
       <div className="ArtistProfile">
-        <h2>{this.props.artist.name}</h2>
+        <h2>{this.props.name}</h2>
         <img src="artistname" className="ArtistProfileImg" />
         <div className="ArtistFollowers">
-          Followers: {this.props.artist.followers.total}
+          Followers: {this.props.followers.total}
         </div>
         <div className="ArtistTopTracks">
           <table width="100%" className="topTracksTable">

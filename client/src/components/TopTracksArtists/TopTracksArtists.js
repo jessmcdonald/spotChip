@@ -1,7 +1,9 @@
 import React from "react";
 import axios from "axios";
-
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./TopTracksArtists.css";
+
+import ArtistInfo from "../ArtistInfo/ArtistInfo";
 
 import { topArtistsLimited, recentlyPlayed } from "../mockData";
 
@@ -195,8 +197,10 @@ class TopTracksArtists extends React.Component {
               <div className="artistsGrid">
                 {this.state.topArtists.items.map(item => (
                   <div className="artistBox">
-                    <img className="artistImg" src={item.images[0].url} />
-                    <p className="artistName">{item.name}</p>
+                    <Link to={`/artists/$item.name}`}>
+                      <img className="artistImg" src={item.images[0].url} />
+                      <p className="artistName">{item.name}</p>
+                    </Link>
                   </div>
                 ))}
               </div>
