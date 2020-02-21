@@ -197,7 +197,7 @@ class TopTracksArtists extends React.Component {
               <div className="artistsGrid">
                 {this.state.topArtists.items.map(item => (
                   <div className="artistBox">
-                    <Link to={`/artists/$item.name}`} artist={item}>
+                    <Link to={`/artists/${item.name}`} artist={item}>
                       <img className="artistImg" src={item.images[0].url} />
                       <p className="artistName">{item.name}</p>
                     </Link>
