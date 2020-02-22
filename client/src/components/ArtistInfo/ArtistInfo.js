@@ -25,11 +25,14 @@ class ArtistInfo extends React.Component {
         {this.state.artist ? (
           <div className="ArtistPage">
             <h2>{this.state.artist.artist.item.name}</h2>
-            {/* <img src="artistname" className="ArtistProfileImg" />
+            <img
+              src={this.state.artist.artist.item.images[0].url}
+              className="ArtistProfileImg"
+            />
             <div className="ArtistFollowers">
-              Followers: {this.props.followers.total}
+              Followers: {this.state.artist.artist.item.followers.total}
             </div>
-            <div className="ArtistTopTracks">
+            {/* <div className="ArtistTopTracks">
               <table width="100%" className="topTracksTable">
                 <tr>
                   <th className="tablenumber" width="10%">
@@ -76,7 +79,7 @@ class ArtistInfo extends React.Component {
                   <div className="AlbumTracklist">//TODO</div>
                 </div>
               ))}
-            </div> */}
+            </div>*/}
           </div>
         ) : (
           <div></div>
