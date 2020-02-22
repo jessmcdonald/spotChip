@@ -200,7 +200,9 @@ class TopTracksArtists extends React.Component {
                     <Link
                       to={{
                         pathname: `/artists/${item.name}`,
-                        state: { artist: { item } }
+                        state: {
+                          artist: { item }
+                        }
                       }}
                     >
                       <img className="artistImg" src={item.images[0].url} />
