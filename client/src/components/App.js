@@ -120,12 +120,16 @@ class App extends React.Component {
                   <Route path="/shows">
                     <FindShows />
                   </Route>
-                  <Route path="artists/:artistname" className="item-c">
-                    <ArtistInfo
-                      access_token={access_token}
-                      getCurrentlyPlaying={this.getCurrentlyPlaying}
-                    />
-                  </Route>
+                  <Route
+                    path="artists/:artistname"
+                    className="item-c"
+                    render={() => (
+                      <ArtistInfo
+                        access_token={access_token}
+                        getCurrentlyPlaying={this.getCurrentlyPlaying}
+                      />
+                    )}
+                  />
                 </Switch>
               </div>
             </Router>
