@@ -13,8 +13,8 @@ class ArtistInfo extends React.Component {
   //TODO
   //check if can get more detailed artist info with axios request
 
-  componentDidMount() {
-    const { artist } = this.props.location.state;
+  componentWillMount() {
+    const artist = this.props.location.state;
     console.log(artist);
   }
 
