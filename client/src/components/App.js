@@ -121,7 +121,7 @@ class App extends React.Component {
                     <FindShows />
                   </Route>
                   <Route
-                    path="artists/:artistname"
+                    path="/artists/:artistname"
                     className="item-c"
                     render={() => (
                       <ArtistInfo
