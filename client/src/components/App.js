@@ -122,13 +122,10 @@ class App extends React.Component {
                   </Route>
                   <Route
                     path="/artists/:artistname"
+                    component={ArtistInfo}
                     className="item-c"
-                    render={() => (
-                      <ArtistInfo
-                        access_token={access_token}
-                        getCurrentlyPlaying={this.getCurrentlyPlaying}
-                      />
-                    )}
+                    access_token={access_token}
+                    getCurrentlyPlaying={this.getCurrentlyPlaying}
                   />
                 </Switch>
               </div>
