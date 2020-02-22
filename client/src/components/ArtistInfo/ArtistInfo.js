@@ -7,73 +7,79 @@ class ArtistInfo extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {};
+    this.state = { artist: null };
   }
 
   //TODO
   //check if can get more detailed artist info with axios request
 
   componentWillMount() {
-    const artist = this.props.location.state;
-    console.log(artist);
+    this.setState({ artist: this.props.location.state });
+    console.log(this.state.artist);
   }
 
   render() {
     return (
       <div className="ArtistProfile">
-        <h2>{artist.name}</h2>
-        <img src="artistname" className="ArtistProfileImg" />
-        <div className="ArtistFollowers">
-          Followers: {this.props.followers.total}
-        </div>
-        <div className="ArtistTopTracks">
-          <table width="100%" className="topTracksTable">
-            <tr>
-              <th className="tablenumber" width="10%">
-                #
-              </th>
-              <th width="10%"></th>
-              <th width="45%">Track</th>
-              <th width="35%">Artist</th>
-            </tr>
-            //TODO
-            {this.props.artist.toptracks.map((item, i) => (
-              <tr className="tr">
-                <td
-                  className="tablenumber"
-                  onClick={() =>
-                    this.playTrack(item, this.props.getCurrentlyPlaying)
-                  }
-                >
-                  {i + 1}
-                </td>
-                <td>
-                  <img
-                    className="playlistImg"
-                    src={item.track.album.images[0].url}
-                  />
-                </td>
-                <td
-                  className="trackName"
-                  onClick={() =>
-                    this.playTrack(item, this.props.getCurrentlyPlaying)
-                  }
-                >
-                  {item.track.name}
-                </td>
-                <td>{item.track.artists[0].name}</td>
-              </tr>
-            ))}
-          </table>
-        </div>
-        <div className="Albums">
-          {this.props.artist.albums.map(item => (
-            <div className="Album">
-              <img src={item.images[0].url} className="AlbumCover" />
-              <div className="AlbumTracklist">//TODO</div>
+        {this.state.artist ? (
+          <div className="ArtistPage">
+            <h2>{artist.name}</h2>
+            <img src="artistname" className="ArtistProfileImg" />
+            <div className="ArtistFollowers">
+              Followers: {this.props.followers.total}
             </div>
-          ))}
-        </div>
+            <div className="ArtistTopTracks">
+              <table width="100%" className="topTracksTable">
+                <tr>
+                  <th className="tablenumber" width="10%">
+                    #
+                  </th>
+                  <th width="10%"></th>
+                  <th width="45%">Track</th>
+                  <th width="35%">Artist</th>
+                </tr>
+                //TODO
+                {this.props.artist.toptracks.map((item, i) => (
+                  <tr className="tr">
+                    <td
+                      className="tablenumber"
+                      onClick={() =>
+                        this.playTrack(item, this.props.getCurrentlyPlaying)
+                      }
+                    >
+                      {i + 1}
+                    </td>
+                    <td>
+                      <img
+                        className="playlistImg"
+                        src={item.track.album.images[0].url}
+                      />
+                    </td>
+                    <td
+                      className="trackName"
+                      onClick={() =>
+                        this.playTrack(item, this.props.getCurrentlyPlaying)
+                      }
+                    >
+                      {item.track.name}
+                    </td>
+                    <td>{item.track.artists[0].name}</td>
+                  </tr>
+                ))}
+              </table>
+            </div>
+            <div className="Albums">
+              {this.props.artist.albums.map(item => (
+                <div className="Album">
+                  <img src={item.images[0].url} className="AlbumCover" />
+                  <div className="AlbumTracklist">//TODO</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ) : (
+          <div></div>
+        )}
       </div>
     );
   }
