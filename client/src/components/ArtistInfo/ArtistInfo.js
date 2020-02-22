@@ -13,7 +13,7 @@ class ArtistInfo extends React.Component {
   //TODO
   //check if can get more detailed artist info with axios request
 
-  componentWillMount() {
+  componentDidMount() {
     this.setState({ artist: this.props.location.state });
     console.log(this.state.artist);
   }
@@ -24,7 +24,7 @@ class ArtistInfo extends React.Component {
         {this.state.artist ? (
           <div className="ArtistPage">
             <h2>{this.state.artist.name}</h2>
-            <img src="artistname" className="ArtistProfileImg" />
+            {/* <img src="artistname" className="ArtistProfileImg" />
             <div className="ArtistFollowers">
               Followers: {this.props.followers.total}
             </div>
@@ -75,7 +75,7 @@ class ArtistInfo extends React.Component {
                   <div className="AlbumTracklist">//TODO</div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         ) : (
           <div></div>
