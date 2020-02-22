@@ -23,7 +23,7 @@ class ArtistInfo extends React.Component {
       <div className="ArtistProfile">
         {this.state.artist ? (
           <div className="ArtistPage">
-            <h2>{artist.name}</h2>
+            <h2>{this.state.artist.name}</h2>
             <img src="artistname" className="ArtistProfileImg" />
             <div className="ArtistFollowers">
               Followers: {this.props.followers.total}
