@@ -14,8 +14,9 @@ class ArtistInfo extends React.Component {
   //check if can get more detailed artist info with axios request
 
   componentDidMount() {
-    this.setState({ artist: this.props.location.state });
-    console.log(this.state.artist);
+    this.setState({ artist: this.props.location.state }, () => {
+      console.log(this.state.artist);
+    });
   }
 
   render() {
