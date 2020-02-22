@@ -67,7 +67,7 @@ class RecentGenres extends React.Component {
       .sort((a, b) => (a.size > b.size ? 1 : -1))
       .reverse();
     this.setState({ genreArray: topGenres.slice(0, 5) });
-    console.log(this.state.genreArray);
+    //console.log(this.state.genreArray);
   };
 
   render() {

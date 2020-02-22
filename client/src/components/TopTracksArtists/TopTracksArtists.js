@@ -29,14 +29,14 @@ class TopTracksArtists extends React.Component {
   setTimeRange = e => {
     this.setState({ timeRange: e.target.id }, () => {
       this.getTopArtists();
-      console.log(this.state.timeRange);
+      //console.log(this.state.timeRange);
     });
   };
 
   setTimeRangeTracks = e => {
     this.setState({ timeRangeTracks: e.target.id }, () => {
       this.getTopTracks();
-      console.log(this.state.timeRangeTracks);
+      //console.log(this.state.timeRangeTracks);
     });
   };
 
@@ -49,7 +49,7 @@ class TopTracksArtists extends React.Component {
       })
       .then(response => {
         this.setState({ topArtists: response.data });
-        console.log(this.state.topArtists);
+        //console.log(this.state.topArtists);
       })
       .catch(function(error) {
         console.log(error);
@@ -65,7 +65,7 @@ class TopTracksArtists extends React.Component {
       })
       .then(response => {
         this.setState({ topTracks: response.data });
-        console.log(this.state.topTracks);
+        //console.log(this.state.topTracks);
       })
       .catch(function(error) {
         console.log(error);
@@ -75,7 +75,7 @@ class TopTracksArtists extends React.Component {
   playTrack = (item, getCurrentlyPlaying) => {
     let access_token = this.props.access_token;
     const url = "https://api.spotify.com/v1/me/player/play";
-    console.log(access_token);
+    //console.log(access_token);
     axios({
       method: "PUT",
       url: url,
