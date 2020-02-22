@@ -79,11 +79,11 @@ class UserInfo extends React.Component {
           ) : (
             <div></div>
           )}
-          <div className="trackPlayer">
+          {/* <div className="trackPlayer">
             <button className="playerButton">
               <img src={playPause} className="playerImg" />
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     );
