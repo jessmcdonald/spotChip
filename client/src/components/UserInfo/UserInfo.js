@@ -79,6 +79,7 @@ class UserInfo extends React.Component {
           ) : (
             <div></div>
           )}
+
           {/* <div className="trackPlayer">
             <button className="playerButton">
               <img src={playPause} className="playerImg" />

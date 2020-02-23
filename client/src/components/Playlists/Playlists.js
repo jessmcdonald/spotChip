@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import "./Playlists.css";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import { playlists } from "../mockData";
 
@@ -41,7 +42,16 @@ class Playlists extends React.Component {
             <h2>Playlists</h2>
             <div className="playlistGrid">
               {this.state.playlists.items.map(item => (
-                <img src={item.images[0].url} className="playlistCoverImg" />
+                <Link
+                  to={{
+                    pathname: `/playlists/${item.name}`,
+                    state: {
+                      playlist: { item }
+                    }
+                  }}
+                >
+                  <img src={item.images[0].url} className="playlistCoverImg" />
+                </Link>
               ))}
             </div>
           </div>

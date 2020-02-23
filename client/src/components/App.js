@@ -9,6 +9,7 @@ import HomeDashboard from "./HomeDashboard/HomeDashboard";
 import TopTracksArtists from "./TopTracksArtists/TopTracksArtists";
 import FindShows from "./FindShows/FindShows";
 import ArtistInfo from "./ArtistInfo/ArtistInfo";
+import PlaylistInfo from "./PlaylistInfo";
 
 import { user } from "./mockData";
 
@@ -123,6 +124,13 @@ class App extends React.Component {
                   <Route
                     path="/artists/:artistname"
                     component={ArtistInfo}
+                    className="item-c"
+                    access_token={access_token}
+                    getCurrentlyPlaying={this.getCurrentlyPlaying}
+                  />
+                  <Route
+                    path="/playlists/:playlistname"
+                    component={PlaylistInfo}
                     className="item-c"
                     access_token={access_token}
                     getCurrentlyPlaying={this.getCurrentlyPlaying}
