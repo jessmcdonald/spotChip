@@ -9,7 +9,7 @@ import HomeDashboard from "./HomeDashboard/HomeDashboard";
 import TopTracksArtists from "./TopTracksArtists/TopTracksArtists";
 import FindShows from "./FindShows/FindShows";
 import ArtistInfo from "./ArtistInfo/ArtistInfo";
-import PlaylistInfo from "./PlaylistInfo";
+import PlaylistInfo from "./PlaylistInfo/PlaylistInfo";
 
 import { user } from "./mockData";
 
