@@ -50,13 +50,17 @@ class ArtistInfo extends React.Component {
             <div className="ArtistId">
               ID: {this.state.artist.artist.item.id}
             </div>
-            <div className="Albums">
-              {this.state.albums.items.map(item => (
-                <div className="Album">
-                  <img src={item.images[0].url} className="AlbumCover" />
-                </div>
-              ))}
-            </div>
+            {this.state.albums ? (
+              <div className="Albums">
+                {this.state.albums.items.map(item => (
+                  <div className="Album">
+                    <img src={item.images[0].url} className="AlbumCover" />
+                  </div>
+                ))}
+              </div>
+            ) : (
+              <div>no albums!</div>
+            )}
           </div>
         ) : (
           <div></div>
