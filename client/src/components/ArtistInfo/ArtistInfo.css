@@ -1,5 +1,5 @@
 .ArtistProfile {
-  color: fff;
+  color: #fff;
 }
 
 .ArtistProfileImg {
@@ -10,13 +10,27 @@
 .Albums {
   display: flex;
   flex-wrap: wrap;
-  overflow-y: scroll;
+  overflow: scroll;
 }
 
 .Album {
   width: 40%;
+  text-align: left;
+  justify-items: center;
 }
 
 .AlbumCover {
   width: 6vw;
+  margin-right: 1vw;
+}
+
+.artistFollowersTitle {
+  text-transform: uppercase;
+  color: #b2b2b2;
+  letter-spacing: 0.3em;
+  font-size: 1.2vh;
+}
+
+.artistFollowerCount {
+  color: #1db954;
 }

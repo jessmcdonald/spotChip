@@ -48,9 +48,9 @@ class ArtistInfo extends React.Component {
               className="ArtistProfileImg"
             />
 
-            <div className="followers">
-              <p className="followersTitle">Followers</p>
-              <p className="followerCount">
+            <div className="artistFollowers">
+              <p className="artistFollowersTitle">Followers</p>
+              <p className="artistFollowerCount">
                 {this.state.artist.artist.item.followers.total}
               </p>
             </div>
