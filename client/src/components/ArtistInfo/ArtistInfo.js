@@ -16,7 +16,8 @@ class ArtistInfo extends React.Component {
       .get(
         `https://api.spotify.com/v1/artists/${this.state.artist.artist.item.id}/albums`,
         {
-          headers: { Authorization: `Bearer ${access_token}` }
+          headers: { Authorization: `Bearer ${access_token}` },
+          params: { country: "from_token" }
         }
       )
       .then(response => {
