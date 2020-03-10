@@ -10,7 +10,7 @@ class ArtistInfo extends React.Component {
   }
 
   getArtistAlbums = () => {
-    let access_token = this.state.access_token;
+    let access_token = this.state.access_token.access_token;
     console.log(access_token);
     axios
       .get(
