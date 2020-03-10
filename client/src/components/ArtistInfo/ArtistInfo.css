@@ -3,6 +3,10 @@
   border-radius: 50%;
 }
 
+.Albums {
+  display: flex;
+}
+
 .AlbumCover {
-  width: 10vw;
+  width: 6vw;
 }
