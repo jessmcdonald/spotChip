@@ -11,6 +11,7 @@ class ArtistInfo extends React.Component {
 
   getArtistAlbums = () => {
     let access_token = this.props.access_token;
+    console.log(access_token);
     axios
       .get(
         `https://api.spotify.com/v1/artists/${this.state.artist.artist.item.id}/albums`,
