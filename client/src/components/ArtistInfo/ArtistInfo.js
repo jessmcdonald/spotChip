@@ -30,8 +30,8 @@ class ArtistInfo extends React.Component {
   componentDidMount() {
     this.setState({ artist: this.props.location.state }, () => {
       console.log(this.state.artist);
+      this.getArtistAlbums();
     });
-    this.getArtistAlbums();
   }
 
   render() {
