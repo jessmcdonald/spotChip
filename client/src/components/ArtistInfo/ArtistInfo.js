@@ -58,6 +58,7 @@ class ArtistInfo extends React.Component {
                 {this.state.albums.items.map(item => (
                   <div className="Album">
                     <img src={item.images[0].url} className="AlbumCover" />
+                    {item.name}
                   </div>
                 ))}
               </div>
