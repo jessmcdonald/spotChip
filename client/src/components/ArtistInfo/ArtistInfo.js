@@ -47,12 +47,14 @@ class ArtistInfo extends React.Component {
               src={this.state.artist.artist.item.images[0].url}
               className="ArtistProfileImg"
             />
-            <div className="ArtistFollowers">
-              Followers: {this.state.artist.artist.item.followers.total}
+
+            <div className="followers">
+              <p className="followersTitle">Followers</p>
+              <p className="followerCount">
+                {this.state.artist.artist.item.followers.total}
+              </p>
             </div>
-            <div className="ArtistId">
-              ID: {this.state.artist.artist.item.id}
-            </div>
+
             {this.state.albums ? (
               <div className="Albums">
                 {this.state.albums.items.map(item => (
