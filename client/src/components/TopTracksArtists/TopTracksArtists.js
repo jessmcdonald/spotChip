@@ -204,6 +204,7 @@ class TopTracksArtists extends React.Component {
                           artist: { item }
                         }
                       }}
+                      access_token={this.props.access_token}
                     >
                       <img className="artistImg" src={item.images[0].url} />
                       <p className="artistName">{item.name}</p>
