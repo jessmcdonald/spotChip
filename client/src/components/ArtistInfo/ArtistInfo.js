@@ -10,7 +10,7 @@ class ArtistInfo extends React.Component {
   }
 
   getArtistAlbums = () => {
-    let access_token = this.props.access_token;
+    let access_token = this.state.access_token;
     console.log(access_token);
     axios
       .get(
@@ -29,6 +29,9 @@ class ArtistInfo extends React.Component {
   };
 
   componentDidMount() {
+    this.setState({ access_token: this.props.location.state }, () => {
+      console.log(this.state.access_token);
+    });
     this.setState({ artist: this.props.location.state }, () => {
       console.log(this.state.artist);
       this.getArtistAlbums();
