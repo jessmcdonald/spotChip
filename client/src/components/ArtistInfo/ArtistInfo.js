@@ -32,6 +32,9 @@ class ArtistInfo extends React.Component {
             <div className="ArtistFollowers">
               Followers: {this.state.artist.artist.item.followers.total}
             </div>
+            <div className="ArtistId">
+              ID: {this.state.artist.artist.item.id}
+            </div>
             {/* <div className="ArtistTopTracks">
               <table width="100%" className="topTracksTable">
                 <tr>
