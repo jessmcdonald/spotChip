@@ -42,7 +42,7 @@ th {
   cursor: pointer;
 }
 
-tr:hover {
+.tablerow:hover {
   background-color: #4c4c4c;
 }
 

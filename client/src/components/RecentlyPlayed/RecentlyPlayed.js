@@ -10,7 +10,7 @@ class RecentlyPlayed extends React.Component {
 
     this.state = {
       //recentlyPlayed: recentlyPlayed
-      recentlyPlayed: null
+      recentlyPlayed: null,
     };
   }
 
@@ -24,13 +24,13 @@ class RecentlyPlayed extends React.Component {
       .get("https://api.spotify.com/v1/me/player/recently-played", {
         headers: { Authorization: `Bearer ${access_token}` },
         params: {
-          limit: 10
-        }
+          limit: 10,
+        },
       })
-      .then(response => {
+      .then((response) => {
         this.setState({ recentlyPlayed: response.data.items });
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
       });
   };
@@ -46,13 +46,13 @@ class RecentlyPlayed extends React.Component {
       headers: {
         Authorization: `Bearer ${access_token}`,
         Accept: "application/json",
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     })
-      .then(function(response) {
+      .then(function (response) {
         getCurrentlyPlaying();
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
       });
   };
@@ -64,7 +64,7 @@ class RecentlyPlayed extends React.Component {
         {this.state.recentlyPlayed ? (
           <table width="100%" className="recentlyPlayedTable">
             <tr>
-              <th className="tablenumber" width="10%">
+              <th className="tablenumberHeader" width="10%">
                 #
               </th>
               <th width="10%"></th>
@@ -73,7 +73,7 @@ class RecentlyPlayed extends React.Component {
             </tr>
 
             {this.state.recentlyPlayed.map((item, i) => (
-              <tr className="tr">
+              <tr className="tablerow">
                 <td
                   className="tablenumber"
                   onClick={() =>
