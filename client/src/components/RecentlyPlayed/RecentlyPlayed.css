@@ -24,7 +24,8 @@ th {
   font-size: 1.2vh;
 }
 
-.tablenumber {
+.tablenumber,
+.tablenumberHeader {
   text-align: center !important;
 }
 
