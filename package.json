@@ -24,7 +24,7 @@
   "homepage": "https://github.com/jessmcdonald/showspotter#README",
   "dependencies": {
     "axios": "^0.19.2",
-    "cookie-parser": "^1.4.4",
+    "cookie-parser": "^1.4.5",
     "cors": "^2.8.4",
     "dotenv": "^8.2.0",
     "express": "~4.16.0",

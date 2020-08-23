@@ -17,13 +17,13 @@ class ArtistInfo extends React.Component {
         `https://api.spotify.com/v1/artists/${this.state.artist.artist.item.id}/albums`,
         {
           headers: { Authorization: `Bearer ${access_token}` },
-          params: { country: "from_token" }
+          params: { country: "from_token" },
         }
       )
-      .then(response => {
+      .then((response) => {
         this.setState({ albums: response.data });
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
       });
   };
@@ -44,10 +44,14 @@ class ArtistInfo extends React.Component {
         {this.state.artist ? (
           <div className="ArtistPage">
             <h2>{this.state.artist.artist.item.name}</h2>
-            <img
-              src={this.state.artist.artist.item.images[0].url}
-              className="ArtistProfileImg"
-            />
+            {this.state.artist.artist.item.images[0] ? (
+              <img
+                src={this.state.artist.artist.item.images[0].url}
+                className="ArtistProfileImg"
+              />
+            ) : (
+              <div></div>
+            )}
 
             <div className="artistFollowers">
               <p className="artistFollowersTitle">Followers</p>
@@ -58,7 +62,7 @@ class ArtistInfo extends React.Component {
 
             {this.state.albums ? (
               <div className="Albums">
-                {this.state.albums.items.map(item => (
+                {this.state.albums.items.map((item) => (
                   <div className="Album">
                     <img src={item.images[0].url} className="AlbumCover" />
                     {item.name}
