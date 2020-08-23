@@ -15,7 +15,7 @@ class TopTracksArtists extends React.Component {
       timeRange: "short_term",
       timeRangeTracks: "short_term",
       topArtists: null,
-      topTracks: null
+      topTracks: null,
       //topArtists: topArtistsLimited,
       //topTracks: recentlyPlayed
     };
@@ -26,14 +26,14 @@ class TopTracksArtists extends React.Component {
     this.getTopTracks();
   }
 
-  setTimeRange = e => {
+  setTimeRange = (e) => {
     this.setState({ timeRange: e.target.id }, () => {
       this.getTopArtists();
       //console.log(this.state.timeRange);
     });
   };
 
-  setTimeRangeTracks = e => {
+  setTimeRangeTracks = (e) => {
     this.setState({ timeRangeTracks: e.target.id }, () => {
       this.getTopTracks();
       //console.log(this.state.timeRangeTracks);
@@ -45,13 +45,13 @@ class TopTracksArtists extends React.Component {
     axios
       .get("https://api.spotify.com/v1/me/top/artists", {
         headers: { Authorization: `Bearer ${access_token}` },
-        params: { limit: 16, time_range: this.state.timeRange }
+        params: { limit: 16, time_range: this.state.timeRange },
       })
-      .then(response => {
+      .then((response) => {
         this.setState({ topArtists: response.data });
         //console.log(this.state.topArtists);
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
       });
   };
@@ -61,13 +61,13 @@ class TopTracksArtists extends React.Component {
     axios
       .get("https://api.spotify.com/v1/me/top/tracks", {
         headers: { Authorization: `Bearer ${access_token}` },
-        params: { limit: 15, time_range: this.state.timeRangeTracks }
+        params: { limit: 15, time_range: this.state.timeRangeTracks },
       })
-      .then(response => {
+      .then((response) => {
         this.setState({ topTracks: response.data });
         //console.log(this.state.topTracks);
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
       });
   };
@@ -83,13 +83,13 @@ class TopTracksArtists extends React.Component {
       headers: {
         Authorization: `Bearer ${access_token}`,
         Accept: "application/json",
-        "Content-Type": "application/json"
-      }
+        "Content-Type": "application/json",
+      },
     })
-      .then(function(response) {
+      .then(function (response) {
         getCurrentlyPlaying();
       })
-      .catch(function(error) {
+      .catch(function (error) {
         console.log(error);
       });
   };
@@ -104,21 +104,21 @@ class TopTracksArtists extends React.Component {
               <button
                 className="timeFrameButton"
                 id="short_term"
-                onClick={e => this.setTimeRangeTracks(e)}
+                onClick={(e) => this.setTimeRangeTracks(e)}
               >
                 last month
               </button>
               <button
                 className="timeFrameButton"
                 id="medium_term"
-                onClick={e => this.setTimeRangeTracks(e)}
+                onClick={(e) => this.setTimeRangeTracks(e)}
               >
                 last 6 months
               </button>
               <button
                 className="timeFrameButton"
                 id="long_term"
-                onClick={e => this.setTimeRangeTracks(e)}
+                onClick={(e) => this.setTimeRangeTracks(e)}
               >
                 ever
               </button>
@@ -174,40 +174,46 @@ class TopTracksArtists extends React.Component {
               <button
                 className="timeFrameButton"
                 id="short_term"
-                onClick={e => this.setTimeRange(e)}
+                onClick={(e) => this.setTimeRange(e)}
               >
                 last month
               </button>
               <button
                 className="timeFrameButton"
                 id="medium_term"
-                onClick={e => this.setTimeRange(e)}
+                onClick={(e) => this.setTimeRange(e)}
               >
                 last 6 months
               </button>
               <button
                 className="timeFrameButton"
                 id="long_term"
-                onClick={e => this.setTimeRange(e)}
+                onClick={(e) => this.setTimeRange(e)}
               >
                 ever
               </button>
             </div>
             {this.state.topArtists ? (
               <div className="artistsGrid">
-                {this.state.topArtists.items.map(item => (
+                {this.state.topArtists.items.map((item) => (
                   <div className="artistBox">
                     <Link
                       to={{
                         pathname: `/artists/${item.name}`,
                         state: {
                           artist: { item },
-                          access_token: `${this.props.access_token}`
-                        }
+                          access_token: `${this.props.access_token}`,
+                        },
                       }}
                     >
-                      <img className="artistImg" src={item.images[0].url} />
-                      <p className="artistName">{item.name}</p>
+                      {item.images[0] ? (
+                        <div>
+                          <img className="artistImg" src={item.images[0].url} />
+                          <p className="artistName">{item.name}</p>
+                        </div>
+                      ) : (
+                        <p className="artistName">{item.name}</p>
+                      )}
                     </Link>
                   </div>
                 ))}
