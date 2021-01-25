@@ -28,6 +28,16 @@
   grid-row-gap: 2%;
 }
 
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: #1db954;
+    cursor: pointer;
+}
+
 .artistImg {
   width: 6vw;
   height: 6vw;
@@ -46,12 +56,6 @@
   font-size: 0.75vw;
   letter-spacing: 0.2em;
   margin-top: 0vh;
-  text-decoration: none;
-}
-
-.artistName:hover {
-  opacity: 0.6;
-  cursor: pointer;
 }
 
 .topTracksTable {
@@ -82,7 +86,6 @@
 
 .timeFrameButton:hover {
   background-color: #1db954;
-  border-color: #000;
   color: #fff;
 }
 
