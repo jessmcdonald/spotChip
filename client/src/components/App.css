@@ -1,5 +1,6 @@
 button:focus {
-  outline: solid 0.4vh #1db954;
+  background: #1db954;
+  outline: none;
 }
 
 button:hover {
@@ -75,7 +76,7 @@ h2 {
   background-color: #b2b2b2;
   text-transform: uppercase;
   color: #000;
-  border-color: #b2b2b2;
+  border: none;
   letter-spacing: 0.3em;
   font-family: "CircularProBold";
   font-size: 1.2vh;
@@ -83,11 +84,11 @@ h2 {
   margin-bottom: 0.4vh;
   text-decoration: none;
   width: 12vw;
+  height: 3rem;
 }
 
 .nav-button:hover {
   background-color: #1db954;
-  border-color: #000;
   color: #fff;
 }
 
