@@ -29,13 +29,14 @@
 }
 
 a {
-    text-decoration: none;
-    transition: 0.3s;
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover {
-    color: #1db954;
-    cursor: pointer;
+  color: #1db954;
+  cursor: pointer;
 }
 
 .artistImg {
@@ -51,7 +52,6 @@ a:hover {
 }
 
 .artistName {
-  color: #fff;
   font-weight: 400;
   font-size: 0.75vw;
   letter-spacing: 0.2em;
